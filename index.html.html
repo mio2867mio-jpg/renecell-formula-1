@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>RENE CELL 保養配置圖產生器</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500;700;900&family=Noto+Sans+TC:wght@400;500;700;900&family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <style>
+    :root{
+      --ink:#26201d;
+      --muted:#756b63;
+      --paper:#fffdf8;
+      --cream:#f7f1e7;
+      --line:#e8dccd;
+      --gold:#c7a866;
+      --coffee:#4f3e34;
+      --blue-soft:#dceef2;
+      --blue-soft-2:#eef8fa;
+      --night:#4c3a31;
+      --night-bg:#e6e1dc;
+      --shadow:0 22px 58px rgba(41,33,27,.16);
+      --radius:24px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:'Noto Sans TC', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      color:var(--ink);
+      background:
+        radial-gradient(circle at 18% 8%, rgba(255,255,255,.9), transparent 33%),
+        radial-gradient(circle at 86% 12%, rgba(226,236,239,.55), transparent 28%),
+        linear-gradient(135deg,#f9f6f0 0%,#efe7db 45%,#f8f8f6 100%);
+      min-height:100vh;
+    }
+    button,input,select,textarea{font:inherit}
+    button{cursor:pointer}
+    .app{width:min(1180px,94vw);margin:0 auto;padding:26px 0 68px}
+    .topbar{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;margin-bottom:18px}
+    .brand-kicker{font-family:'Cormorant Garamond',serif;letter-spacing:.28em;font-size:15px;font-weight:700;color:#8b7654;text-transform:uppercase}
+    h1{font-family:'Noto Serif TC',serif;font-size:34px;margin:4px 0 6px;letter-spacing:.06em;line-height:1.18;color:#2d2522}
+    .subtitle{color:var(--muted);line-height:1.7;font-size:14px;max-width:720px}
+    .pill-warning{display:flex;align-items:flex-start;gap:10px;padding:12px 14px;border:1px solid rgba(199,168,102,.36);background:rgba(255,253,248,.76);border-radius:18px;color:#5a4b42;font-size:13px;line-height:1.55;box-shadow:0 10px 25px rgba(0,0,0,.06)}
+    .pill-warning b{color:#2e2622}
+    .toolbar{position:sticky;top:0;z-index:20;background:rgba(248,244,238,.86);backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.7);border-radius:22px;padding:12px;display:flex;gap:10px;flex-wrap:wrap;box-shadow:0 18px 42px rgba(53,43,35,.12);margin-bottom:18px}
+    .btn{border:0;border-radius:999px;padding:12px 18px;font-weight:800;background:#fff;color:#3a302b;box-shadow:0 6px 18px rgba(0,0,0,.08);display:inline-flex;align-items:center;gap:8px;justify-content:center;transition:.18s transform,.18s opacity,.18s box-shadow}
+    .btn:hover{transform:translateY(-1px);box-shadow:0 10px 24px rgba(0,0,0,.12)}
+    .btn.primary{background:linear-gradient(135deg,#41312a,#6f5548);color:#fff}
+    .btn.blue{background:linear-gradient(135deg,#d8eef3,#eef8fa);color:#254c58;border:1px solid rgba(89,137,150,.18)}
+    .btn.night{background:linear-gradient(135deg,#4a3931,#675247);color:#fff}
+    .btn.ghost{background:rgba(255,255,255,.72);border:1px solid rgba(99,79,62,.12)}
+    .btn.small{padding:8px 12px;font-size:13px}
+    .grid{display:grid;grid-template-columns:minmax(0,1fr) 420px;gap:20px;align-items:start}
+    .panel{background:rgba(255,253,248,.88);border:1px solid rgba(255,255,255,.8);border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden}
+    .panel-head{padding:20px 22px 14px;border-bottom:1px solid rgba(199,168,102,.18)}
+    .panel-title{font-family:'Noto Serif TC',serif;font-weight:900;font-size:20px;color:#332823;letter-spacing:.04em;display:flex;align-items:center;gap:8px}
+    .panel-desc{font-size:13px;color:var(--muted);line-height:1.65;margin-top:6px}
+    .panel-body{padding:18px 22px 22px}
+    .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:14px}
+    label.field{display:flex;flex-direction:column;gap:6px;font-size:13px;color:#6f625a;font-weight:700}
+    input,textarea,select{border:1px solid #e5d8c8;background:rgba(255,255,255,.9);border-radius:14px;padding:12px 13px;color:#2c2521;outline:none}
+    input:focus,textarea:focus,select:focus{border-color:#c7a866;box-shadow:0 0 0 4px rgba(199,168,102,.16)}
+    textarea{min-height:84px;resize:vertical}
+    .tag-list{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+    .tag{border:1px solid rgba(199,168,102,.28);background:#fff;border-radius:999px;padding:8px 11px;font-weight:800;color:#705f52;font-size:13px;user-select:none}
+    .tag input{display:none}
+    .tag:has(input:checked){background:#4d3b33;color:#fff;border-color:#4d3b33}
+    .category{margin:18px 0 8px}
+    .category-title{font-family:'Noto Serif TC',serif;font-weight:900;color:#3d302a;margin:0 0 10px;display:flex;align-items:center;gap:8px;font-size:18px}
+    .category-title::before{content:'';width:9px;height:9px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 5px rgba(199,168,102,.18)}
+    .products{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+    .product-card{position:relative;border:1px solid rgba(199,168,102,.22);background:rgba(255,255,255,.9);border-radius:18px;padding:12px;min-height:162px;display:flex;flex-direction:column;gap:8px;align-items:center;text-align:center;transition:.18s transform,.18s border-color,.18s box-shadow}
+    .product-card:hover{transform:translateY(-2px);box-shadow:0 14px 30px rgba(57,45,36,.12)}
+    .product-card.selected{border-color:#4d3b33;box-shadow:0 0 0 3px rgba(77,59,51,.12),0 14px 30px rgba(57,45,36,.12)}
+    .check-dot{position:absolute;top:10px;right:10px;width:24px;height:24px;border-radius:50%;background:#f4eee5;border:1px solid #dcc9ad;display:grid;place-items:center;color:#b39456;font-weight:900;font-size:12px}
+    .product-card.selected .check-dot{background:#4d3b33;color:#fff;border-color:#4d3b33}
+    .product-img{width:72px;height:72px;object-fit:contain;border-radius:16px;background:#f5f3ef}
+    .product-name{font-weight:900;font-size:14px;line-height:1.35;color:#2d2521}
+    .product-meta{font-size:12px;color:#8a7a6c;line-height:1.3}
+    .selected-list{display:flex;flex-direction:column;gap:12px}
+    .selected-item{border:1px solid rgba(199,168,102,.24);background:rgba(255,255,255,.84);border-radius:18px;padding:12px;display:grid;grid-template-columns:54px 1fr;gap:10px}
+    .selected-thumb{width:54px;height:54px;object-fit:contain;background:#f5f3ef;border-radius:13px}
+    .selected-top{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:8px}
+    .selected-name{font-weight:900;color:#2b221f;font-size:14px}
+    .remove{border:0;background:#f3e9df;color:#7a4d42;border-radius:999px;padding:5px 9px;font-weight:800;font-size:12px}
+    .cfg-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px}
+    .cfg-wide{grid-column:1/-1}
+    .cfg-label{font-size:12px;color:#75675c;font-weight:800;margin-bottom:5px}
+    .seg{display:flex;gap:7px;flex-wrap:wrap}
+    .seg button{border:1px solid #dfd0bf;background:#fff;border-radius:999px;padding:7px 10px;font-weight:900;color:#6e5e51;font-size:12px}
+    .seg button.active{background:#4d3b33;color:#fff;border-color:#4d3b33}
+    .empty{padding:18px;border:1px dashed #dbc9b4;border-radius:18px;color:#8a7b6d;text-align:center;background:rgba(255,255,255,.45);font-size:13px;line-height:1.7}
+    .order-box{border:1px solid rgba(199,168,102,.24);border-radius:20px;overflow:hidden;margin-bottom:14px;background:rgba(255,255,255,.75)}
+    .order-head{padding:11px 14px;font-weight:900;display:flex;align-items:center;justify-content:space-between;gap:8px}
+    .order-head.am{background:#dceef2;color:#234c57}.order-head.pm{background:#4d3b33;color:#fff}
+    .order-items{padding:10px;display:flex;flex-direction:column;gap:8px}
+    .order-row{display:grid;grid-template-columns:26px 42px 1fr auto;gap:9px;align-items:center;background:#fff;border-radius:14px;padding:8px;border:1px solid rgba(199,168,102,.14)}
+    .order-num{width:24px;height:24px;border-radius:50%;display:grid;place-items:center;background:#f4eadb;color:#a8864b;font-weight:900;font-size:12px;border:1px solid #d9c294}
+    .order-img{width:42px;height:42px;object-fit:contain;background:#f7f5f1;border-radius:11px}
+    .order-name{font-size:13px;font-weight:900;color:#332a25;line-height:1.3}
+    .move-btns{display:flex;gap:5px}.move-btns button{border:0;border-radius:9px;background:#eee5da;color:#4e4038;font-weight:900;width:30px;height:30px}
+    .preview-wrap{position:sticky;top:86px}
+    .result-area{display:flex;justify-content:center;padding:16px;background:rgba(255,255,255,.35);border-radius:var(--radius)}
+    .result-sheet{
+      width:390px;
+      min-height:720px;
+      border-radius:30px;
+      padding:28px 20px 28px;
+      background:
+        radial-gradient(circle at 15% 8%, rgba(255,255,255,.8), transparent 30%),
+        linear-gradient(135deg, rgba(248,247,243,.92), rgba(237,232,224,.86)),
+        #f6f3ee;
+      box-shadow:0 22px 55px rgba(42,33,26,.2);
+      color:#211b18;
+      overflow:hidden;
+    }
+    .sheet-kicker{font-family:'Cormorant Garamond',serif;text-align:center;letter-spacing:.22em;font-size:13px;font-weight:700;color:#755f4d;text-transform:uppercase;text-shadow:0 1px 0 rgba(255,255,255,.7)}
+    .sheet-title{font-family:'Noto Serif TC',serif;text-align:center;font-size:27px;font-weight:900;color:#2d201c;letter-spacing:.04em;line-height:1.2;margin:6px 0 18px;text-shadow:0 1px 0 rgba(255,255,255,.85)}
+    .meta-row{display:grid;grid-template-columns:1fr 1.45fr 1fr;background:rgba(255,255,255,.92);border:1px solid rgba(255,255,255,.9);border-radius:18px;padding:12px 13px;margin-bottom:14px;gap:10px;box-shadow:0 10px 24px rgba(0,0,0,.05)}
+    .meta-label{font-size:10px;color:#74695f;font-weight:700}.meta-value{font-size:13px;font-weight:900;color:#251e1b;margin-top:3px;line-height:1.35}
+    .routine{border-radius:20px;margin:14px 0;overflow:hidden;border:1px solid rgba(64,49,41,.14)}
+    .routine.am{background:#dceef2}.routine.pm{background:#dedad6}
+    .routine-title{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:12px 13px;font-family:'Noto Serif TC',serif;font-weight:900;font-size:16px}
+    .routine.am .routine-title{background:#cfe6ec;color:#254c58}.routine.pm .routine-title{background:#4d3b33;color:#fff}
+    .hint{font-family:'Noto Sans TC',sans-serif;font-size:10px;font-weight:800;border-radius:999px;padding:6px 9px;background:rgba(255,255,255,.75);white-space:nowrap}.routine.pm .hint{background:rgba(255,255,255,.14);color:#fff}
+    .routine-grid{padding:10px;display:grid;grid-template-columns:repeat(2,1fr);gap:8px;align-items:stretch}
+    .r-card{background:rgba(255,255,255,.96);border-radius:16px;padding:9px 7px;display:flex;flex-direction:column;align-items:center;text-align:center;position:relative;min-height:166px;border:1px solid rgba(255,255,255,.9);box-shadow:0 5px 12px rgba(42,33,26,.06)}
+    .r-num{position:absolute;top:8px;left:8px;width:22px;height:22px;border-radius:50%;background:#fff;color:#b4965b;border:1px solid #d8c192;font-weight:900;font-size:11px;display:grid;place-items:center;z-index:2}
+    .r-img{width:76px;height:76px;object-fit:contain;border-radius:15px;background:#f7f5f1;margin-bottom:7px}
+    .r-name{font-weight:900;font-size:12px;line-height:1.35;color:#151211;margin-bottom:6px;min-height:32px;display:flex;align-items:center;justify-content:center}
+    .r-info{display:flex;flex-direction:column;gap:4px;align-items:center;width:100%}
+    .r-chip{background:#f2eadc;color:#7f6842;border-radius:999px;padding:4px 7px;font-size:10px;font-weight:900;max-width:100%;line-height:1.2}
+    .notes{background:rgba(255,255,255,.92);border-radius:18px;padding:14px;margin-top:14px;border:1px solid rgba(199,168,102,.16)}
+    .notes-title{font-family:'Noto Serif TC',serif;font-size:15px;font-weight:900;margin-bottom:8px;color:#332823}.note-text{font-size:12px;line-height:1.75;color:#5f534b;white-space:pre-wrap}
+    .provider{display:flex;justify-content:center;margin-top:16px}.provider span{background:rgba(255,255,255,.86);border:1px solid rgba(199,168,102,.18);border-radius:999px;padding:7px 13px;font-size:12px;font-weight:900;color:#3e332d;box-shadow:0 8px 18px rgba(0,0,0,.06)}
+    .result-sheet.exporting{width:2000px;height:2828px;box-sizing:border-box;border-radius:78px;padding:96px 96px 76px;box-shadow:none;display:flex;flex-direction:column;overflow:hidden}
+    .result-sheet.exporting .sheet-kicker{font-size:36px;letter-spacing:.32em}.result-sheet.exporting .sheet-title{font-size:76px;margin:18px 0 46px}.result-sheet.exporting .meta-row{border-radius:38px;padding:34px 44px;margin-bottom:28px;gap:36px}.result-sheet.exporting .meta-label{font-size:24px}.result-sheet.exporting .meta-value{font-size:36px;margin-top:9px}.result-sheet.exporting .routine{border-radius:42px;margin:26px 0;border-width:3px}.result-sheet.exporting .routine-title{padding:26px 36px;font-size:44px}.result-sheet.exporting .hint{font-size:24px;padding:12px 22px}.result-sheet.exporting .routine-grid{padding:26px;grid-template-columns:repeat(4,1fr);gap:20px}.result-sheet.exporting .r-card{border-radius:32px;padding:22px 14px;min-height:270px}.result-sheet.exporting .r-num{top:18px;left:18px;width:48px;height:48px;font-size:24px}.result-sheet.exporting .r-img{width:132px;height:132px;border-radius:28px;margin-bottom:12px}.result-sheet.exporting .r-name{font-size:25px;min-height:58px;margin-bottom:8px}.result-sheet.exporting .r-info{gap:6px}.result-sheet.exporting .r-chip{font-size:20px;padding:8px 14px}.result-sheet.exporting .notes{border-radius:34px;padding:28px 34px;margin-top:24px}.result-sheet.exporting .notes-title{font-size:32px;margin-bottom:8px}.result-sheet.exporting .note-text{font-size:24px;line-height:1.55}.result-sheet.exporting .provider{margin-top:auto;padding-top:20px}.result-sheet.exporting .provider span{font-size:26px;padding:14px 30px}
+    .login-screen{position:fixed;inset:0;background:linear-gradient(135deg,#f8f5ef,#efe7dc);z-index:999;display:grid;place-items:center;padding:22px}
+    .login-card{width:min(430px,92vw);background:rgba(255,255,255,.9);border:1px solid rgba(255,255,255,.9);border-radius:28px;padding:32px 28px;box-shadow:0 26px 80px rgba(51,39,31,.2);text-align:center}.login-card h2{font-family:'Noto Serif TC',serif;margin:0 0 6px;font-size:28px}.login-card p{margin:0 0 18px;color:#71645b;line-height:1.65;font-size:14px}.login-card input{width:100%;text-align:center;font-weight:900;letter-spacing:.08em;margin-bottom:12px}.login-error{color:#b34a3e;font-weight:900;min-height:22px;font-size:13px;margin-top:10px}.locked .app{display:none}
+    @media (max-width:980px){.grid{grid-template-columns:1fr}.preview-wrap{position:static}.products{grid-template-columns:repeat(2,minmax(0,1fr))}.result-sheet{width:min(390px,100%)}}
+    @media (max-width:560px){.app{width:94vw;padding-top:18px}.topbar{display:block}h1{font-size:27px}.form-grid{grid-template-columns:1fr}.products{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.product-card{padding:10px;min-height:154px}.panel-body{padding:15px}.panel-head{padding:17px 15px 12px}.cfg-grid{grid-template-columns:1fr}.toolbar{top:6px}.btn{width:100%;padding:12px 14px}.result-area{padding:8px}.result-sheet{padding:23px 13px;border-radius:26px}.sheet-title{font-size:23px}.meta-row{grid-template-columns:1fr 1fr}.meta-row>div:nth-child(2){grid-column:1/-1}.routine-grid{grid-template-columns:repeat(2,1fr);gap:7px;padding:8px}.r-card{min-height:150px}.r-img{width:62px;height:62px}.r-name{font-size:11px}.r-chip{font-size:9px}.order-row{grid-template-columns:24px 38px 1fr auto}.move-btns button{width:27px;height:27px}}
+    @media print{body{background:#fff}.app{display:block}.panel,.toolbar,.topbar{display:none}.preview-wrap{display:block}.result-sheet{box-shadow:none}}
+  </style>
+</head>
+<body class="locked">
+  <div class="login-screen" id="loginScreen">
+    <div class="login-card">
+      <div class="brand-kicker">RENE · CELL</div>
+      <h2>保養配置工具</h2>
+      <p>此工具限團隊內部教育與配置使用，請勿任意外流。</p>
+      <input type="password" id="passwordInput" placeholder="請輸入團隊密碼" autocomplete="off" />
+      <button class="btn primary" style="width:100%" id="loginBtn">進入工具</button>
+      <div class="login-error" id="loginError"></div>
+    </div>
+  </div>
+
+  <main class="app">
+    <div class="topbar">
+      <div>
+        <div class="brand-kicker">RENE · CELL PRESCRIPTION</div>
+        <h1>保養配置圖產生器</h1>
+        <div class="subtitle">依照顧客膚況，快速建立白天與晚上保養順序。商品依點選順序加入，可用 ↑ ↓ 微調；結果圖只顯示商品名稱、用量、用法。</div>
+      </div>
+      <div class="pill-warning"><span>⚠️</span><div><b>操作提醒：</b>請使用外部瀏覽器開啟本頁。LINE 聊天室內建瀏覽器可能無法下載或分享圖片。Android 建議 Chrome，iPhone 建議 Safari。</div></div>
+    </div>
+
+    <div class="toolbar">
+      <button class="btn primary" id="makeBtn">產生配置圖</button>
+      <button class="btn blue" id="downloadPngBtn">下載高清 PNG</button>
+      <button class="btn ghost" id="downloadPdfBtn">下載高清 PDF</button>
+      <button class="btn night" id="shareBtn">分享圖片（外部瀏覽器支援）</button>
+      <button class="btn ghost" id="openImageBtn">開啟圖片新分頁</button>
+      <button class="btn ghost" id="logoutBtn">登出</button>
+    </div>
+
+    <div class="grid">
+      <section>
+        <div class="panel">
+          <div class="panel-head">
+            <div class="panel-title">① 顧客資料</div>
+            <div class="panel-desc">填寫顧客資料、膚況重點與配置者。配置者會以小標籤顯示在結果圖最下方。</div>
+          </div>
+          <div class="panel-body">
+            <div class="form-grid">
+              <label class="field">顧客姓名<input id="customerName" value="Mio" placeholder="例如：Mio" /></label>
+              <label class="field">配置者<input id="providerName" value="雪華" placeholder="例如：雪華／雪華首席" /></label>
+              <label class="field">配置日期<input id="dateInput" type="date" /></label>
+              <label class="field">膚況重點<input id="skinText" placeholder="可自行輸入，例如：敏感、出油、痘痘" /></label>
+            </div>
+            <div class="cfg-label">常用膚況快速選擇</div>
+            <div class="tag-list" id="skinTags"></div>
+            <label class="field" style="margin-top:14px">整體備註<textarea id="notesInput" placeholder="例：痘痘處局部加強，避開眼周與破皮處；兩週後回訪追蹤膚況。"></textarea></label>
+          </div>
+        </div>
+
+        <div class="panel" style="margin-top:18px">
+          <div class="panel-head">
+            <div class="panel-title">② 選擇商品</div>
+            <div class="panel-desc">產品編排順序：清潔 → 精華液 → 霜類 → 乳液 → 特殊護理。點選商品會依點選順序加入白天／晚上排序區。</div>
+          </div>
+          <div class="panel-body" id="productArea"></div>
+        </div>
+      </section>
+
+      <aside class="preview-wrap">
+        <div class="panel">
+          <div class="panel-head">
+            <div class="panel-title">③ 已選商品設定</div>
+            <div class="panel-desc">設定白天／晚上、用量與用法。選「滴」或「cm」才會出現數量；泡沫清潔可選手起泡或打泡器。</div>
+          </div>
+          <div class="panel-body">
+            <div id="selectedList" class="selected-list"></div>
+          </div>
+        </div>
+
+        <div class="panel" style="margin-top:18px">
+          <div class="panel-head">
+            <div class="panel-title">④ 使用順序微調</div>
+            <div class="panel-desc">預設依照點選順序排列，也可以用 ↑ ↓ 微調。</div>
+          </div>
+          <div class="panel-body">
+            <div class="order-box">
+              <div class="order-head am"><span>☀ 白天 AM 使用順序</span><small>由左至右</small></div>
+              <div class="order-items" id="amOrderBox"></div>
+            </div>
+            <div class="order-box">
+              <div class="order-head pm"><span>☾ 晚上 PM 使用順序</span><small>由左至右</small></div>
+              <div class="order-items" id="pmOrderBox"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="result-area" style="margin-top:18px">
+          <div class="result-sheet" id="resultSheet"></div>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+<script>
+const PASSWORD = 'K24519811';
+const IMG_DIR = 'images/';
+const today = new Date();
+document.getElementById('dateInput').value = `${today.getFullYear()}-${String(today.getMonth()+1).padStart(2,'0')}-${String(today.getDate()).padStart(2,'0')}`;
+
+const skinOptions = ['敏感','出油','痘痘','粉刺','乾燥','暗沉','術後修護','加強保濕','加強防曬','2週回訪'];
+const products = [
+  {id:'cleanser',cat:'清潔',name:'酵素潔顏粉',img:'cleanser.png',defaultTimes:['am','pm'],amountType:'適量',method:'泡沫清潔',foam:'手起泡'},
+  {id:'exfoliate',cat:'清潔',name:'去角質面霜',img:'exfoliate.png',defaultTimes:['pm'],amountType:'適量',method:'塗抹',foam:'手起泡'},
+
+  {id:'toner',cat:'精華液',name:'多肽化妝水',img:'toner.png',defaultTimes:['am','pm'],amountType:'滴',amountQty:'3',method:'塗抹',foam:'手起泡'},
+  {id:'hiq_pre',cat:'精華液',name:'Hi-Q前導精華',img:'hiq_pre.png',defaultTimes:['am','pm'],amountType:'cm',amountQty:'1',method:'塗抹',foam:'手起泡'},
+  {id:'ha',cat:'精華液',name:'玻尿酸補水精華',img:'ha.png',defaultTimes:['am','pm'],amountType:'滴',amountQty:'3',method:'塗抹',foam:'手起泡'},
+  {id:'vitc',cat:'精華液',name:'維生素C精華',img:'vitc.png',defaultTimes:['am'],amountType:'cm',amountQty:'1',method:'塗抹',foam:'手起泡'},
+  {id:'regen',cat:'精華液',name:'再生修復精華',img:'regen.png',defaultTimes:['am','pm'],amountType:'cm',amountQty:'1',method:'塗抹',foam:'手起泡'},
+  {id:'ampoule',cat:'精華液',name:'緊緻安瓶',img:'ampoule.png',defaultTimes:['pm'],amountType:'滴',amountQty:'3',method:'塗抹',foam:'手起泡'},
+
+  {id:'peptide_cream',cat:'霜類',name:'多肽霜',img:'peptide_cream.png',defaultTimes:['pm'],amountType:'cm',amountQty:'1',method:'塗抹',foam:'手起泡'},
+  {id:'hiq_cream',cat:'霜類',name:'Hi-Q奢華面霜',img:'hiq_cream.png',defaultTimes:['am','pm'],amountType:'cm',amountQty:'1',method:'塗抹',foam:'手起泡'},
+  {id:'repair_cream',cat:'霜類',name:'保濕修護霜',img:'repair_cream.png',defaultTimes:['am','pm'],amountType:'cm',amountQty:'1',method:'塗抹',foam:'手起泡'},
+  {id:'diamond_cb',cat:'霜類',name:'鑽石CB修護霜',img:'diamond_cb.png',defaultTimes:['am','pm'],amountType:'cm',amountQty:'1',method:'塗抹',foam:'手起泡'},
+  {id:'bb',cat:'霜類',name:'BB隔離霜',img:'bb.png',defaultTimes:['am'],amountType:'cm',amountQty:'1',method:'塗抹',foam:'手起泡'},
+  {id:'sunscreen',cat:'霜類',name:'SPF 50防曬霜',img:'sunscreen.png',defaultTimes:['am'],amountType:'cm',amountQty:'2',method:'塗抹',foam:'手起泡'},
+  {id:'spot_cream',cat:'霜類',name:'美白淡斑霜',img:'spot_cream.png',defaultTimes:['pm'],amountType:'少量',method:'塗抹',foam:'手起泡'},
+
+  {id:'antisens',cat:'乳液',name:'抗敏乳',img:'antisens.png',defaultTimes:['am','pm'],amountType:'適量',method:'塗抹',foam:'手起泡'},
+
+  {id:'mask_119',cat:'特殊護理',name:'119面膜',img:'mask_119.png',defaultTimes:['pm'],amountType:'適量',method:'厚敷',foam:'手起泡'},
+  {id:'mask_nutrition',cat:'特殊護理',name:'營養保濕面膜',img:'mask_nutrition.png',defaultTimes:['pm'],amountType:'適量',method:'厚敷',foam:'手起泡'},
+  {id:'coconut_mask',cat:'特殊護理',name:'椰子面膜',img:'coconut_mask.png',defaultTimes:['pm'],amountType:'適量',method:'厚敷',foam:'手起泡'},
+  {id:'bluelight_spray',cat:'特殊護理',name:'抗藍光防護噴霧',img:'bluelight_spray.png',defaultTimes:['am'],amountType:'適量',method:'噴霧',foam:'手起泡'},
+  {id:'cpr_set',cat:'特殊護理',name:'CPR三階段保養套組',img:'cpr_set.png',defaultTimes:['pm'],amountType:'適量',method:'塗抹',foam:'手起泡'},
+  {id:'whitening_2wk',cat:'特殊護理',name:'2週集中淡斑管理',img:'whitening_2wk.png',defaultTimes:['pm'],amountType:'適量',method:'塗抹',foam:'手起泡'}
+];
+const catOrder = ['清潔','精華液','霜類','乳液','特殊護理'];
+const catIcons = {清潔:'🫧',精華液:'💧',霜類:'🤍',乳液:'🧴',特殊護理:'✨'};
+const state = { cfg:{}, amOrder:[], pmOrder:[] };
+products.forEach((p,idx)=>state.cfg[p.id]={...p, selected:false, am:p.defaultTimes.includes('am'), pm:p.defaultTimes.includes('pm'), clickSeq:idx+1});
+
+function escapeHTML(str=''){
+  return String(str).replace(/[&<>'"]/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]));
+}
+function imgTag(p, cls=''){
+  return `<img class="${cls}" src="${IMG_DIR}${p.img}" alt="${escapeHTML(p.name)}" onerror="this.style.display='none';this.insertAdjacentHTML('afterend','<div class=&quot;${cls} fallback&quot;>${escapeHTML(p.name.slice(0,1))}</div>')">`;
+}
+function amountText(p){
+  if(p.amountType==='滴') return `${p.amountQty||1}滴`;
+  if(p.amountType==='cm') return `${p.amountQty||1}cm`;
+  return p.amountType || '適量';
+}
+function methodText(p){
+  if(p.method==='泡沫清潔') return `泡沫清潔・${p.foam||'手起泡'}`;
+  return p.method || '塗抹';
+}
+function selectedIds(){return products.filter(p=>state.cfg[p.id].selected).map(p=>p.id)}
+function ensureOrder(id){
+  const p=state.cfg[id];
+  if(!p.selected) return;
+  if(p.am && !state.amOrder.includes(id)) state.amOrder.push(id);
+  if(p.pm && !state.pmOrder.includes(id)) state.pmOrder.push(id);
+  if(!p.am) state.amOrder=state.amOrder.filter(x=>x!==id);
+  if(!p.pm) state.pmOrder=state.pmOrder.filter(x=>x!==id);
+}
+function removeFromOrders(id){
+  state.amOrder=state.amOrder.filter(x=>x!==id);
+  state.pmOrder=state.pmOrder.filter(x=>x!==id);
+}
+function validOrder(kind){
+  const arr = kind==='am'?state.amOrder:state.pmOrder;
+  return arr.filter(id=>state.cfg[id]?.selected && state.cfg[id]?.[kind]);
+}
+function toggleProduct(id){
+  const p=state.cfg[id];
+  p.selected=!p.selected;
+  if(p.selected){ensureOrder(id)}else{removeFromOrders(id)}
+  renderAll();
+}
+function move(kind,id,dir){
+  const arr = kind==='am'?state.amOrder:state.pmOrder;
+  const filtered = validOrder(kind);
+  const i=filtered.indexOf(id);
+  const j=i+dir;
+  if(i<0 || j<0 || j>=filtered.length) return;
+  const newFiltered=[...filtered];
+  [newFiltered[i],newFiltered[j]]=[newFiltered[j],newFiltered[i]];
+  if(kind==='am') state.amOrder=newFiltered; else state.pmOrder=newFiltered;
+  renderAll();
+}
+function setTime(id,kind,val){
+  state.cfg[id][kind]=val;
+  ensureOrder(id);
+  renderAll();
+}
+function setCfg(id,key,val){
+  state.cfg[id][key]=val;
+  renderAll();
+}
+function renderSkinTags(){
+  document.getElementById('skinTags').innerHTML = skinOptions.map(t=>`<label class="tag"><input type="checkbox" value="${escapeHTML(t)}" onchange="renderResult()">${escapeHTML(t)}</label>`).join('');
+}
+function renderProducts(){
+  const wrap=document.getElementById('productArea');
+  wrap.innerHTML = catOrder.map(cat=>{
+    const list=products.filter(p=>p.cat===cat);
+    return `<div class="category"><h3 class="category-title">${catIcons[cat]} ${cat}</h3><div class="products">${list.map(p=>{
+      const c=state.cfg[p.id];
+      return `<button type="button" class="product-card ${c.selected?'selected':''}" onclick="toggleProduct('${p.id}')">
+        <span class="check-dot">${c.selected?'✓':''}</span>
+        ${imgTag(p,'product-img')}
+        <div class="product-name">${escapeHTML(p.name)}</div>
+      </button>`
+    }).join('')}</div></div>`
+  }).join('');
+}
+function renderSelected(){
+  const list=selectedIds();
+  const el=document.getElementById('selectedList');
+  if(!list.length){el.innerHTML='<div class="empty">尚未選擇商品。請從左側商品區點選商品。</div>'; return;}
+  el.innerHTML=list.map(id=>{
+    const p=state.cfg[id];
+    const qtyDisplay = (p.amountType==='滴'||p.amountType==='cm') ? '' : 'display:none';
+    return `<div class="selected-item">
+      ${imgTag(p,'selected-thumb')}
+      <div>
+        <div class="selected-top"><div class="selected-name">${escapeHTML(p.name)}</div><button class="remove" onclick="toggleProduct('${id}')">移除</button></div>
+        <div class="cfg-wide"><div class="cfg-label">使用時段</div><div class="seg"><button class="${p.am?'active':''}" onclick="setTime('${id}','am',${!p.am})">白天 AM</button><button class="${p.pm?'active':''}" onclick="setTime('${id}','pm',${!p.pm})">晚上 PM</button></div></div>
+        <div class="cfg-grid">
+          <label><div class="cfg-label">用量類型</div><select onchange="setCfg('${id}','amountType',this.value)"><option ${p.amountType==='適量'?'selected':''}>適量</option><option ${p.amountType==='少量'?'selected':''}>少量</option><option ${p.amountType==='滴'?'selected':''}>滴</option><option ${p.amountType==='cm'?'selected':''}>cm</option></select></label>
+          <label style="${qtyDisplay}"><div class="cfg-label">數量</div><select onchange="setCfg('${id}','amountQty',this.value)">${(p.amountType==='cm'?['1','2']:['1','2','3','4','5']).map(n=>`<option ${String(p.amountQty||1)===n?'selected':''}>${n}</option>`).join('')}</select></label>
+          <label><div class="cfg-label">用法</div><select onchange="setCfg('${id}','method',this.value)"><option ${p.method==='塗抹'?'selected':''}>塗抹</option><option ${p.method==='厚敷'?'selected':''}>厚敷</option><option ${p.method==='噴霧'?'selected':''}>噴霧</option><option ${p.method==='泡沫清潔'?'selected':''}>泡沫清潔</option></select></label>
+          <label style="${p.method==='泡沫清潔'?'':'display:none'}"><div class="cfg-label">泡沫方式</div><select onchange="setCfg('${id}','foam',this.value)"><option ${p.foam==='手起泡'?'selected':''}>手起泡</option><option ${p.foam==='打泡器'?'selected':''}>打泡器</option></select></label>
+        </div>
+      </div>
+    </div>`
+  }).join('');
+}
+function renderOrder(kind){
+  const ids=validOrder(kind);
+  const box=document.getElementById(kind==='am'?'amOrderBox':'pmOrderBox');
+  if(!ids.length){box.innerHTML='<div class="empty">尚未加入商品</div>';return;}
+  box.innerHTML=ids.map((id,i)=>{
+    const p=state.cfg[id];
+    return `<div class="order-row"><div class="order-num">${i+1}</div>${imgTag(p,'order-img')}<div class="order-name">${escapeHTML(p.name)}</div><div class="move-btns"><button onclick="move('${kind}','${id}',-1)">↑</button><button onclick="move('${kind}','${id}',1)">↓</button></div></div>`
+  }).join('');
+}
+function getSkinText(){
+  const checked=[...document.querySelectorAll('#skinTags input:checked')].map(i=>i.value);
+  const manual=document.getElementById('skinText').value.trim();
+  return manual || checked.join('、') || '保養配置';
+}
+function renderRoutine(kind,title,ids){
+  const cls=kind==='am'?'am':'pm';
+  return `<section class="routine ${cls}"><div class="routine-title"><span>${title}</span><span class="hint">由左至右依序使用</span></div><div class="routine-grid">${ids.length?ids.map((id,i)=>{
+    const p=state.cfg[id];
+    return `<div class="r-card"><div class="r-num">${i+1}</div>${imgTag(p,'r-img')}<div class="r-name">${escapeHTML(p.name)}</div><div class="r-info"><span class="r-chip">用量 ${escapeHTML(amountText(p))}</span><span class="r-chip">用法 ${escapeHTML(methodText(p))}</span></div></div>`
+  }).join(''):'<div class="empty" style="grid-column:1/-1;background:rgba(255,255,255,.65)">尚未選擇商品</div>'}</div></section>`;
+}
+function renderResult(){
+  const customer=document.getElementById('customerName').value.trim();
+  const provider=document.getElementById('providerName').value.trim();
+  const date=document.getElementById('dateInput').value || '';
+  const notes=document.getElementById('notesInput').value.trim();
+  const am=validOrder('am');
+  const pm=validOrder('pm');
+  document.getElementById('resultSheet').innerHTML=`
+    <div class="sheet-kicker">RENE · CELL PRESCRIPTION</div>
+    <div class="sheet-title">專屬保養配置建議</div>
+    <div class="meta-row"><div><div class="meta-label">客戶</div><div class="meta-value">${escapeHTML(customer)}</div></div><div><div class="meta-label">膚況重點</div><div class="meta-value">${escapeHTML(getSkinText())}</div></div><div><div class="meta-label">配置日期</div><div class="meta-value">${escapeHTML(date.replaceAll('-','/'))}</div></div></div>
+    ${renderRoutine('am','☀ 白天 AM 使用順序',am)}
+    ${renderRoutine('pm','☾ 晚上 PM 使用順序',pm)}
+    ${notes?`<div class="notes"><div class="notes-title">注意事項</div><div class="note-text">${escapeHTML(notes)}</div></div>`:''}
+    <div class="provider"><span>配置者：${escapeHTML(provider)}</span></div>`;
+}
+function renderAll(){renderProducts();renderSelected();renderOrder('am');renderOrder('pm');renderResult();}
+async function waitForImages(root){
+  const imgs=[...root.querySelectorAll('img')].filter(img=>img.style.display!=='none');
+  await Promise.all(imgs.map(img=> img.complete ? Promise.resolve() : new Promise(res=>{img.onload=img.onerror=res;})));
+}
+async function makeCanvas(){
+  renderResult();
+  const sheet=document.getElementById('resultSheet');
+  sheet.classList.add('exporting');
+  await new Promise(r=>setTimeout(r,120));
+  await waitForImages(sheet);
+  const canvas=await html2canvas(sheet,{scale:2,useCORS:true,backgroundColor:'#f6f3ee',allowTaint:false,logging:false,imageTimeout:15000,windowWidth:2200,width:2000,height:2828});
+  sheet.classList.remove('exporting');
+  return canvas;
+}
+async function downloadPNG(){
+  const canvas=await makeCanvas();
+  canvas.toBlob(blob=>{
+    const url=URL.createObjectURL(blob);
+    const a=document.createElement('a');
+    a.href=url;a.download='RENECELL-保養配置圖.png';document.body.appendChild(a);a.click();a.remove();
+    setTimeout(()=>URL.revokeObjectURL(url),1000);
+  },'image/png',1);
+}
+async function openImageTab(){
+  const canvas=await makeCanvas();
+  const url=canvas.toDataURL('image/png');
+  const w=window.open();
+  if(w){w.document.write(`<title>RENE CELL 配置圖</title><img src="${url}" style="max-width:100%;height:auto;display:block;margin:auto;">`);} else alert('瀏覽器阻擋新分頁，請改用下載高清 PNG。');
+}
+async function downloadPDF(){
+  const canvas=await makeCanvas();
+  const img=canvas.toDataURL('image/png');
+  const { jsPDF } = window.jspdf;
+  const pageW=2480, pageH=3508;
+  const pdf=new jsPDF({orientation:'portrait',unit:'px',format:[pageW,pageH]});
+  const ratio=Math.min(pageW/canvas.width,pageH/canvas.height);
+  const w=canvas.width*ratio;
+  const h=canvas.height*ratio;
+  const x=(pageW-w)/2;
+  const y=(pageH-h)/2;
+  pdf.addImage(img,'PNG',x,y,w,h);
+  pdf.save('RENECELL-A2保養配置圖.pdf');
+}
+async function shareImage(){
+  try{
+    const canvas=await makeCanvas();
+    const blob=await new Promise(res=>canvas.toBlob(res,'image/png',1));
+    const file=new File([blob],'RENECELL-保養配置圖.png',{type:'image/png'});
+    if(navigator.canShare && navigator.canShare({files:[file]})){
+      await navigator.share({files:[file],title:'RENE CELL 保養配置圖',text:'專屬保養配置建議'});
+    }else{
+      alert('此裝置或瀏覽器不支援直接分享圖片。請先下載高清 PNG，再從 LINE 以「檔案」方式傳送，畫質最清楚。');
+    }
+  }catch(e){
+    alert('分享未完成。請先下載高清 PNG，再從 LINE 傳送。');
+  }
+}
+function login(){
+  const val=document.getElementById('passwordInput').value.trim();
+  if(val===PASSWORD){sessionStorage.setItem('renecell_login','yes');document.body.classList.remove('locked');document.getElementById('loginScreen').style.display='none';renderAll();}
+  else document.getElementById('loginError').textContent='密碼錯誤，請重新輸入';
+}
+function logout(){sessionStorage.removeItem('renecell_login');location.reload();}
+
+document.getElementById('loginBtn').onclick=login;
+document.getElementById('passwordInput').addEventListener('keydown',e=>{if(e.key==='Enter')login();});
+document.getElementById('logoutBtn').onclick=logout;
+document.getElementById('makeBtn').onclick=renderResult;
+document.getElementById('downloadPngBtn').onclick=downloadPNG;
+document.getElementById('downloadPdfBtn').onclick=downloadPDF;
+document.getElementById('shareBtn').onclick=shareImage;
+document.getElementById('openImageBtn').onclick=openImageTab;
+['customerName','providerName','dateInput','skinText','notesInput'].forEach(id=>document.getElementById(id).addEventListener('input',renderResult));
+renderSkinTags();
+if(sessionStorage.getItem('renecell_login')==='yes'){
+  document.body.classList.remove('locked');document.getElementById('loginScreen').style.display='none';renderAll();
+}
+</script>
+</body>
+</html>
