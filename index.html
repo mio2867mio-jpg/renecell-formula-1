@@ -145,8 +145,6 @@ button{cursor:pointer;border:0;outline:none}
     <button id="generateBtnTop" class="action primary" onclick="generatePoster()">生成配置圖</button>
   </div>
   <div class="notice">請使用外部瀏覽器開啟</div>
-    
-  </div>
   <div class="layout">
     <div class="left-col">
       <section class="panel"><h2>顧客資料</h2><div class="form-grid">
@@ -163,7 +161,13 @@ button{cursor:pointer;border:0;outline:none}
       <section id="previewSection" class="panel preview-panel" style="margin-top:18px"><h2>配置圖預覽 (2:3 完美比例)</h2><div class="poster-shell"><div id="poster" class="poster"></div></div></section>
     </div>
   </div>
-</div>
+  <section class="panel bottom-actions-panel" style="margin-top:18px">
+    <h2>輸出圖片</h2>
+    <div class="bottom-actions">
+      <button class="action blue" id="downloadBtn" onclick="handleAction('download')">下載圖片</button>
+      <button class="action line" id="shareBtn" onclick="handleAction('share')">分享到 LINE</button>
+    </div>
+  </section></div>
 <script>
 /* 【請在此處修改您的團隊登入密碼】 */
 const PASSWORD='K24519811'; 
