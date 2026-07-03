@@ -125,15 +125,17 @@ button{cursor:pointer;border:0;outline:none}
 }
 .export-mode .poster-bg{border-radius:0!important}
 
-@media(max-width:1100px){.layout{grid-template-columns:1fr}.products{grid-template-columns:repeat(2,1fr)}.poster{transform:scale(.85);transform-origin:top center;margin-bottom:-140px}.poster-top{grid-template-columns:1fr}.meta-bottom{grid-template-columns:1fr}}@media(max-width:720px){.app{padding:12px 10px 50px}.topbar{border-radius:0 0 20px 20px}.action{height:44px;font-size:14px;padding:0 14px}.panel{padding:16px;border-radius:22px}.form-grid{grid-template-columns:1fr}.products{grid-template-columns:1fr;gap:10px}.product-card{min-height:148px}.poster-shell{padding:0;justify-content:flex-start}.poster{transform:scale(.42);margin-bottom:-650px}.preview-panel{padding:0;overflow:auto}.cfg-grid{grid-template-columns:1fr}}
+@media(max-width:1100px){.layout{grid-template-columns:1fr}.products{grid-template-columns:repeat(2,1fr)}.poster{transform:scale(.85);transform-origin:top center;margin-bottom:-140px}.poster-top{grid-template-columns:1fr}.meta-bottom{grid-template-columns:1fr}}@media(max-width:720px){.app{padding:12px 10px 50px}.topbar{border-radius:0 0 20px 20px}.action{height:44px;font-size:14px;padding:0 14px}.panel{padding:16px;border-radius:22px}.form-grid{grid-template-columns:1fr}.products{grid-template-columns:1fr;gap:10px}.product-card{min-height:148px}.poster-shell{padding:0;justify-content:center;min-height:520px;overflow:hidden}.poster{transform:scale(.42);transform-origin:top center;margin-bottom:-650px}.preview-panel{padding:14px;overflow:hidden}.cfg-grid{grid-template-columns:1fr}}
 
 .topbar-generate{justify-content:center}
-.bottom-actions-panel{text-align:center}
-.bottom-actions{display:flex;gap:14px;justify-content:center;align-items:center;flex-wrap:wrap}
-.bottom-actions .action{min-width:180px;height:54px;font-size:18px}
+.bottom-actions-panel{text-align:center;max-width:680px;margin-left:auto!important;margin-right:auto!important}
+.bottom-actions-panel h2{margin-bottom:18px}
+.bottom-actions{display:flex;gap:18px;justify-content:center;align-items:center;flex-wrap:wrap;max-width:560px;margin:0 auto}
+.bottom-actions .action{min-width:220px;height:58px;font-size:18px}
 @media(max-width:720px){
-  .bottom-actions{display:grid;grid-template-columns:1fr;gap:12px}
-  .bottom-actions .action{width:100%;min-width:0}
+  .bottom-actions-panel{width:min(100%,390px);padding:22px 18px}
+  .bottom-actions{display:grid;grid-template-columns:1fr;gap:12px;width:100%;max-width:320px}
+  .bottom-actions .action{width:100%;min-width:0;height:52px;font-size:17px}
 }
 
 </style>
@@ -158,7 +160,7 @@ button{cursor:pointer;border:0;outline:none}
     </div>
     <div class="right-col">
       <section class="panel"><h2>選擇商品</h2><div id="productArea"></div></section>
-      <section id="previewSection" class="panel preview-panel" style="margin-top:18px"><h2>配置圖預覽 (2:3 完美比例)</h2><div class="poster-shell"><div id="poster" class="poster"></div></div></section>
+      <section id="previewSection" class="panel preview-panel" style="margin-top:18px"><h2>配置圖預覽</h2><div class="poster-shell"><div id="poster" class="poster"></div></div></section>
     </div>
   </div>
   <section class="panel bottom-actions-panel" style="margin-top:18px">
