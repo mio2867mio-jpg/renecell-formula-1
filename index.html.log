@@ -1,0 +1,1477 @@
+[2026-07-03 23:17:42.261 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+Get-Content -Raw 'C:\Users\HP\.codex\plugins\cache
+[2026-07-03 23:17:42.262 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+Get-ChildItem -Force
+[2026-07-03 23:17:42.321 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[2026-07-03 23:17:42.321 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[2026-07-03T15:17:42.348878600+00:00] granting write ACE to C:\Users\HP\Documents\Codex\2026-07-03\files-mentioned-by-the-user-codex for sandbox group and capability SID
+[2026-07-03T15:17:42.349078400+00:00] granting write ACE to C:\Users\HP\Documents\Codex\2026-07-03\files-mentioned-by-the-user-codex for sandbox group and capability SID
+[2026-07-03T15:17:42.350523600+00:00] [setup refresh: processed 3 write roots (read roots delegated); errors=[]2026-07-03T15:17:42.350530900+00:00] 
+setup refresh: processed 3 write roots (read roots delegated); errors=[]
+[2026-07-03 23:17:42.350 codex-windows-sandbox-setup.exe] setup binary completed[2026-07-03 23:17:42.350 codex-windows-sandbox-setup.exe] setup binary completed
+
+[2026-07-03T15:17:42.360570800+00:00] [read-acl-only mode: applying read ACLs2026-07-03T15:17:42.360594300+00:00
+] read ACL helper already running; skipping
+[2026-07-03T15:17:42.361694300+00:00] granting read ACE to C:\Users\HP\.claude for sandbox users
+[2026-07-03T15:17:42.363104100+00:00] granting read ACE to C:\Users\HP\.claude.json for sandbox users
+[2026-07-03T15:17:42.365026600+00:00] read ACL run completed
+[2026-07-03 23:17:42.367 codex.exe] helper copy: validating command-runner source=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-command-runner.exe destination=C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03 23:17:42.367 codex.exe] helper copy: reused command-runner source=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-command-runner.exe destination=C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03 23:17:42.367 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03 23:17:42.368 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03 23:17:42.368 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03 23:17:42.701 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+Get-ChildItem -Force
+[2026-07-03 23:17:50.695 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+Get-Content -Raw 'C:/Users/HP/.codex/plugins/cache
+[2026-07-03 23:17:50.743 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[2026-07-03T15:17:50.759473600+00:00] setup refresh: processed 3 write roots (read roots delegated); errors=[]
+[2026-07-03 23:17:50.759 codex-windows-sandbox-setup.exe] setup binary completed
+[2026-07-03 23:17:50.771 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03 23:17:50.772 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03T15:17:50.778807200+00:00] read-acl-only mode: applying read ACLs
+[2026-07-03T15:17:50.781828200+00:00] read ACL run completed
+[2026-07-03 23:17:50.935 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+Get-Content -Raw 'C:/Users/HP/.codex/plugins/cache
+[2026-07-03 23:19:42.484 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$url='https://raw.githubusercontent.com/mio2867mio
+[2026-07-03 23:19:42.524 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[2026-07-03T15:19:42.547483700+00:00] setup refresh: processed 3 write roots (read roots delegated); errors=[]
+[2026-07-03 23:19:42.547 codex-windows-sandbox-setup.exe] setup binary completed
+[2026-07-03 23:19:42.561 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03 23:19:42.561 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03T15:19:42.566375900+00:00] read-acl-only mode: applying read ACLs
+[2026-07-03T15:19:42.568960300+00:00] read ACL run completed
+[2026-07-03 23:19:42.708 codex-command-runner-0.140.0-alpha.19.exe] hide users: profile dir hidden for current user (C:\Users\CodexSandboxOnline)
+[2026-07-03 23:19:43.162 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$url='https://raw.githubusercontent.com/mio2867mio
+[2026-07-03 23:19:52.483 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$ProgressPreference='SilentlyContinue'; $headers=@
+[2026-07-03 23:19:52.520 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[2026-07-03T15:19:52.539595300+00:00] setup refresh: processed 3 write roots (read roots delegated); errors=[]
+[2026-07-03 23:19:52.539 codex-windows-sandbox-setup.exe] setup binary completed
+[2026-07-03 23:19:52.553 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe[
+2026-07-03T15:19:52.556600900+00:00] read-acl-only mode: applying read ACLs
+[2026-07-03 23:19:52.556 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03T15:19:52.559345900+00:00] read ACL run completed
+[2026-07-03 23:19:53.044 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$ProgressPreference='SilentlyContinue'; $headers=@
+[2026-07-03 23:20:00.385 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+curl.exe -L --http1.1 --retry 3 -A Codex -o work\i
+[2026-07-03 23:20:00.425 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[2026-07-03T15:20:00.447167800+00:00] setup refresh: processed 3 write roots (read roots delegated); errors=[]
+[2026-07-03 23:20:00.447 codex-windows-sandbox-setup.exe] setup binary completed
+[2026-07-03 23:20:00.467 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe[
+2026-07-03T15:20:00.467513900+00:00] read-acl-only mode: applying read ACLs
+[2026-07-03 23:20:00.467 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03T15:20:00.472899100+00:00] read ACL run completed
+[2026-07-03 23:20:00.780 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+curl.exe -L --http1.1 --retry 3 -A Codex -o work\i
+[2026-07-03 23:20:10.349 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+@'
+import urllib.request
+url='https://raw.githubus
+[2026-07-03 23:20:10.392 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[2026-07-03T15:20:10.413179+00:00] setup refresh: processed 3 write roots (read roots delegated); errors=[]
+[2026-07-03 23:20:10.413 codex-windows-sandbox-setup.exe] setup binary completed
+[2026-07-03 23:20:10.428 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03 23:20:10.428 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03T15:20:10.432565100+00:00] read-acl-only mode: applying read ACLs
+[2026-07-03T15:20:10.435320300+00:00] read ACL run completed
+[2026-07-03 23:20:10.649 codex.exe] FAILURE: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+@'
+import urllib.request
+url='https://raw.githubus (exit code 1)
+[2026-07-03 23:20:28.181 codex.exe] START: C:\Users\HP\AppData\Local\OpenAI\Codex\runtimes\cua_node\a89897d3d9baa117\bin\node.exe --experimental-vm-modules C:\Users\HP\AppData\Local\Temp\.tmp3n4Gpn\kernel.js --session-id 37397ecf042144c58c536f
+[2026-07-03 23:20:28.213 codex.exe] setup refresh: spawning C:\Users\HP\AppData\Local\OpenAI\Codex\bin\330bd0cba6496126\codex-windows-sandbox-setup.exe (cwd=C:\Users\HP\Documents\Codex, payload_len=2896)
+[2026-07-03T15:20:28.233569400+00:00] setup refresh: processed 2 write roots (read roots delegated); errors=[]
+[2026-07-03 23:20:28.233 codex-windows-sandbox-setup.exe] setup binary completed
+[2026-07-03 23:20:28.240 codex.exe] helper copy: validating command-runner source=C:\Users\HP\AppData\Local\OpenAI\Codex\bin\330bd0cba6496126\codex-command-runner.exe destination=C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03 23:20:28.243 codex.exe] helper copy: reused command-runner source=C:\Users\HP\AppData\Local\OpenAI\Codex\bin\330bd0cba6496126\codex-command-runner.exe destination=C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03 23:20:28.245 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03T15:20:28.247848800+00:00] read-acl-only mode: applying read ACLs
+[2026-07-03T15:20:28.250738200+00:00] read ACL run completed
+[2026-07-03 23:20:53.242 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+Get-Content 'work\index.fixed.html' -TotalCount 21
+[2026-07-03 23:20:53.281 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[2026-07-03T15:20:53.304488300+00:00] setup refresh: processed 3 write roots (read roots delegated); errors=[]
+[2026-07-03 23:20:53.304 codex-windows-sandbox-setup.exe] setup binary completed
+[2026-07-03 23:20:53.317 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03 23:20:53.317 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03T15:20:53.322235800+00:00] read-acl-only mode: applying read ACLs
+[2026-07-03T15:20:53.324807600+00:00] read ACL run completed
+[2026-07-03 23:20:53.571 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+Get-Content 'work\index.fixed.html' -TotalCount 21
+[2026-07-03 23:20:55.167 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+Get-Content 'work\index.fixed.html' -Tail 35
+[2026-07-03 23:20:55.208 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[2026-07-03T15:20:55.230595100+00:00] setup refresh: processed 3 write roots (read roots delegated); errors=[]
+[2026-07-03 23:20:55.230 codex-windows-sandbox-setup.exe] setup binary completed
+[2026-07-03 23:20:55.245 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03T15:20:55.246486700+00:00] read-acl-only mode: applying read ACLs
+[2026-07-03 23:20:55.246 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03T15:20:55.249673700+00:00] read ACL run completed
+[2026-07-03 23:20:55.406 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+Get-Content 'work\index.fixed.html' -Tail 35
+[2026-07-03 23:21:10.772 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+Get-Content 'work\index.html' -TotalCount 60
+[2026-07-03 23:21:10.812 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[2026-07-03T15:21:10.832760700+00:00] setup refresh: processed 3 write roots (read roots delegated); errors=[]
+[2026-07-03 23:21:10.832 codex-windows-sandbox-setup.exe] setup binary completed
+[2026-07-03 23:21:10.846 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03 23:21:10.846 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03T15:21:10.852038100+00:00] read-acl-only mode: applying read ACLs
+[2026-07-03T15:21:10.854814100+00:00] read ACL run completed
+[2026-07-03 23:21:11.076 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+Get-Content 'work\index.html' -TotalCount 60
+[2026-07-03 23:22:22.381 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+gh auth status
+[2026-07-03 23:22:22.421 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[2026-07-03T15:22:22.442803100+00:00] setup refresh: processed 3 write roots (read roots delegated); errors=[]
+[2026-07-03 23:22:22.442 codex-windows-sandbox-setup.exe] setup binary completed
+[2026-07-03 23:22:22.458 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03T15:22:22.461262100+00:00] read-acl-only mode: applying read ACLs
+[2026-07-03 23:22:22.461 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03T15:22:22.463876700+00:00] read ACL run completed
+[2026-07-03 23:22:22.663 codex.exe] FAILURE: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+gh auth status (exit code 1)
+[2026-07-03 23:24:26.938 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+git clone https://github.com/mio2867mio-jpg/renece
+[2026-07-03 23:24:26.978 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[2026-07-03T15:24:26.998182200+00:00] setup refresh: processed 3 write roots (read roots delegated); errors=[]
+[2026-07-03 23:24:26.998 codex-windows-sandbox-setup.exe] setup binary completed
+[2026-07-03 23:24:27.011 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03 23:24:27.011 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03T15:24:27.016992500+00:00] read-acl-only mode: applying read ACLs
+[2026-07-03T15:24:27.019712100+00:00] read ACL run completed
+[2026-07-03 23:24:27.207 codex.exe] FAILURE: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+git clone https://github.com/mio2867mio-jpg/renece (exit code 1)
+[2026-07-03 23:58:12.549 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+Get-ChildItem -Force
+[2026-07-03 23:58:12.580 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+Get-ChildItem -Recurse -Force -File | Select-Objec
+[2026-07-03 23:58:12.592 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[2026-07-03T15:58:12.613477900+00:00] setup refresh: processed 3 write roots (read roots delegated); errors=[]
+[2026-07-03 23:58:12.613 codex-windows-sandbox-setup.exe] setup binary completed
+[2026-07-03 23:58:12.623 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[2026-07-03 23:58:12.629 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe[
+2026-07-03T15:58:12.632017400+00:00] read-acl-only mode: applying read ACLs
+[2026-07-03 23:58:12.632 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03T15:58:12.634772500+00:00] read ACL run completed
+[2026-07-03T15:58:12.640650600+00:00] setup refresh: processed 3 write roots (read roots delegated); errors=[]
+[2026-07-03 23:58:12.640 codex-windows-sandbox-setup.exe] setup binary completed
+[2026-07-03 23:58:12.653 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03 23:58:12.654 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03T15:58:12.658255800+00:00] read-acl-only mode: applying read ACLs
+[2026-07-03T15:58:12.661039800+00:00] read ACL run completed
+[2026-07-03 23:58:12.661 codex-command-runner-0.140.0-alpha.19.exe] junction: creating via cmd /c mklink /J "C:\Users\CodexSandboxOffline\.codex\.sandbox\cwd\fd155a5f1d4729e8" "C:\Users\HP\Documents\Codex\2026-07-03\files-mentioned-by-the-user-codex"
+[2026-07-03 23:58:12.676 codex-command-runner-0.140.0-alpha.19.exe] junction: created C:\Users\CodexSandboxOffline\.codex\.sandbox\cwd\fd155a5f1d4729e8 -> C:\Users\HP\Documents\Codex\2026-07-03\files-mentioned-by-the-user-codex
+[2026-07-03 23:58:12.813 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+Get-ChildItem -Force
+[2026-07-03 23:58:12.852 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+Get-ChildItem -Recurse -Force -File | Select-Objec
+[2026-07-03 23:58:24.212 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+Get-ChildItem -Force 'C:\Users\HP\Documents\Codex\
+[2026-07-03 23:58:24.213 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+Get-ChildItem -Recurse -Force -File 'C:\Users\HP\D
+[2026-07-03 23:58:24.242 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+Get-ChildItem -Force 'C:\Users\HP\Documents\Codex\
+[2026-07-03 23:58:24.266 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[2026-07-03 23:58:24.268 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[2026-07-03T15:58:24.285982200+00:00] setup refresh: processed 3 write roots (read roots delegated); errors=[]
+[2026-07-03T15:58:24.286685200+00:00] setup refresh: processed 3 write roots (read roots delegated); errors=[]
+[2026-07-03 23:58:24.286 codex-windows-sandbox-setup.exe] setup binary completed
+[2026-07-03 23:58:24.287 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[2026-07-03 23:58:24.289 codex-windows-sandbox-setup.exe] setup binary completed
+[2026-07-03T15:58:24.300851900+00:00] read-acl-only mode: applying read ACLs
+[2026-07-03T15:58:24.304246+00:00] read ACL run completed
+[[2026-07-03 23:58:24.304 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe2026-07-03T15:58:24.304175+00:00] read ACL helper already running; skipping spawn
+
+[2026-07-03T15:58:24.306300600+00:00] [2026-07-03 23:58:24.301 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exeread-acl-only mode: applying read ACLs
+
+[2026-07-03 23:58:24.306 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03 23:58:24.306 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03T15:58:24.307616500+00:00] setup refresh: processed 3 write roots (read roots delegated); errors=[]
+[2026-07-03T15:58:24.309063600+00:00] read ACL run completed
+[2026-07-03 23:58:24.307 codex-windows-sandbox-setup.exe] setup binary completed
+[2026-07-03 23:58:24.322 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03 23:58:24.322 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03 23:58:24.453 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+Get-ChildItem -Force 'C:\Users\HP\Documents\Codex\
+[2026-07-03 23:58:24.502 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+Get-ChildItem -Force 'C:\Users\HP\Documents\Codex\
+[2026-07-03 23:58:24.504 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+Get-ChildItem -Recurse -Force -File 'C:\Users\HP\D
+[2026-07-03 23:58:53.324 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+Get-ChildItem -Recurse -Force -File | Select-Objec
+[2026-07-03 23:58:53.352 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+Get-ChildItem -Force
+[2026-07-03 23:58:53.366 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[2026-07-03T15:58:53.385370600+00:00] setup refresh: processed 3 write roots (read roots delegated); errors=[]
+[2026-07-03 23:58:53.385 codex-windows-sandbox-setup.exe] setup binary completed
+[2026-07-03 23:58:53.391 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[2026-07-03 23:58:53.399 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03 23:58:53.399 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03T15:58:53.404749+00:00] read-acl-only mode: applying read ACLs
+[2026-07-03T15:58:53.406045700+00:00] read ACL helper already running; skipping spawn
+[2026-07-03T15:58:53.407459300+00:00] setup refresh: processed 3 write roots (read roots delegated); errors=[]
+[2026-07-03T15:58:53.407779700+00:00] read ACL run completed
+[2026-07-03 23:58:53.407 codex-windows-sandbox-setup.exe] setup binary completed
+[2026-07-03 23:58:53.421 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03 23:58:53.422 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03 23:58:53.584 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+Get-ChildItem -Force[2026-07-03 23:58:53.584 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+Get-ChildItem -Recurse -Force -File | Select-Objec
+
+[2026-07-03 23:59:50.497 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+Get-Item 'C:\Users\HP\Downloads\index.html.html' |
+[2026-07-03 23:59:50.499 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$p='C:\Users\HP\Downloads\index.html.html'; $t=[IO
+[2026-07-03 23:59:50.577 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3124)
+[2026-07-03 23:59:50.580 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3124)
+[2026-07-03T15:59:50.594948400+00:00] granting write ACE to C:\Users\HP\Downloads\index.html.html for sandbox group and capability SID
+[2026-07-03T15:59:50.596013700+00:00] setup refresh: processed 4 write roots (read roots delegated); errors=[]
+[2026-07-03T15:59:50.597221500+00:00] granting write ACE to C:\Users\HP\Downloads\index.html.html for sandbox group and capability SID
+[2026-07-03 23:59:50.596 codex-windows-sandbox-setup.exe] setup binary completed
+[2026-07-03T15:59:50.599586600+00:00] setup refresh: processed 4 write roots (read roots delegated); errors=[]
+[2026-07-03 23:59:50.599 codex-windows-sandbox-setup.exe] setup binary completed
+[[2026-07-03T15:59:50.611288100+00:002026-07-03T15:59:50.611297700+00:00] ] read-acl-only mode: applying read ACLsread ACL helper already running; skipping
+
+[2026-07-03T15:59:50.614330+00:00] read ACL run completed
+[2026-07-03 23:59:50.618 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03 23:59:50.618 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03 23:59:50.620 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03 23:59:50.620 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03 23:59:50.800 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+Get-Item 'C:\Users\HP\Downloads\index.html.html' |
+[2026-07-03 23:59:50.806 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$p='C:\Users\HP\Downloads\index.html.html'; $t=[IO
+[2026-07-04 00:00:05.077 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$p='C:\Users\HP\Downloads\index.html.html'; $t=[IO
+[2026-07-04 00:00:05.129 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+Select-String -Path 'C:\Users\HP\Downloads\index.h
+[2026-07-04 00:00:05.139 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3124)
+[2026-07-03T16:00:05.156225400+00:00] setup refresh: processed 4 write roots (read roots delegated); errors=[]
+[2026-07-04 00:00:05.156 codex-windows-sandbox-setup.exe] setup binary completed
+[2026-07-03T16:00:05.171694700+00:00] read-acl-only mode: applying read ACLs
+[2026-07-03T16:00:05.174576600+00:00] read ACL run completed
+[2026-07-04 00:00:05.174 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-04 00:00:05.175 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-04 00:00:05.176 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3124)
+[2026-07-03T16:00:05.194016500+00:00] setup refresh: processed 4 write roots (read roots delegated); errors=[]
+[2026-07-04 00:00:05.194 codex-windows-sandbox-setup.exe] setup binary completed
+[2026-07-03T16:00:05.209801800+00:00] read-acl-only mode: applying read ACLs
+[2026-07-04 00:00:05.211 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-04 00:00:05.211 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03T16:00:05.212500500+00:00] read ACL run completed
+[2026-07-04 00:00:05.353 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$p='C:\Users\HP\Downloads\index.html.html'; $t=[IO
+[2026-07-04 00:00:05.412 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+Select-String -Path 'C:\Users\HP\Downloads\index.h
+[2026-07-04 00:00:21.691 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+Copy-Item -LiteralPath 'C:\Users\HP\Downloads\inde
+[2026-07-04 00:00:21.737 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3124)
+[2026-07-03T16:00:21.755356500+00:00] setup refresh: processed 4 write roots (read roots delegated); errors=[]
+[2026-07-04 00:00:21.755 codex-windows-sandbox-setup.exe] setup binary completed
+[2026-07-03T16:00:21.771376300+00:00] read-acl-only mode: applying read ACLs
+[2026-07-04 00:00:21.772 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-04 00:00:21.772 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03T16:00:21.774659400+00:00] read ACL run completed
+[2026-07-04 00:00:21.949 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+Copy-Item -LiteralPath 'C:\Users\HP\Downloads\inde
+[2026-07-04 00:08:32.624 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+Select-String -Path 'outputs\index.html' -Pattern 
+[2026-07-04 00:08:32.664 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[2026-07-04 00:08:32.670 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+Get-Item 'outputs\index.html' | Select-Object Full
+[2026-07-03T16:08:32.687802800+00:00] setup refresh: processed 3 write roots (read roots delegated); errors=[]
+[2026-07-04 00:08:32.687 codex-windows-sandbox-setup.exe] setup binary completed
+[2026-07-04 00:08:32.702 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03T16:08:32.704720800+00:00] read-acl-only mode: applying read ACLs
+[2026-07-04 00:08:32.704 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03T16:08:32.707581200+00:00] read ACL run completed
+[2026-07-04 00:08:32.711 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[2026-07-03T16:08:32.730331900+00:00] setup refresh: processed 3 write roots (read roots delegated); errors=[]
+[2026-07-04 00:08:32.730 codex-windows-sandbox-setup.exe] setup binary completed
+[2026-07-04 00:08:32.744 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-04 00:08:32.744 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03T16:08:32.747272600+00:00] read-acl-only mode: applying read ACLs
+[2026-07-03T16:08:32.750036500+00:00] read ACL run completed
+[2026-07-04 00:08:32.929 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+Get-Item 'outputs\index.html' | Select-Object Full
+[2026-07-04 00:08:33.158 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+Select-String -Path 'outputs\index.html' -Pattern 
+[2026-07-04 00:08:51.199 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+Get-ChildItem -Force 'C:\Users\HP\Downloads' -Filt
+[2026-07-04 00:08:51.239 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[2026-07-03T16:08:51.259045100+00:00] setup refresh: processed 3 write roots (read roots delegated); errors=[]
+[2026-07-04 00:08:51.259 codex-windows-sandbox-setup.exe] setup binary completed
+[2026-07-04 00:08:51.265 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+Select-String -Path 'outputs\index.html' -Pattern 
+[[2026-07-04 00:08:51.275 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe2026-07-03T16:08:51.277680400+00:00
+] read-acl-only mode: applying read ACLs
+[2026-07-04 00:08:51.277 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03T16:08:51.280560300+00:00] read ACL run completed
+[2026-07-04 00:08:51.307 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[2026-07-03T16:08:51.326106500+00:00] setup refresh: processed 3 write roots (read roots delegated); errors=[]
+[2026-07-04 00:08:51.326 codex-windows-sandbox-setup.exe] setup binary completed
+[2026-07-04 00:08:51.341 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-04 00:08:51.342 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03T16:08:51.345872+00:00] read-acl-only mode: applying read ACLs
+[2026-07-03T16:08:51.348907900+00:00] read ACL run completed
+[2026-07-04 00:08:51.468 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+Get-ChildItem -Force 'C:\Users\HP\Downloads' -Filt
+[2026-07-04 00:08:51.535 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+Select-String -Path 'outputs\index.html' -Pattern 
+[2026-07-04 00:09:15.037 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$p='outputs\index.html'; $t=[IO.File]::ReadAllText
+[2026-07-04 00:09:15.070 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+Select-String -Path 'outputs\index.html' -Pattern 
+[2026-07-04 00:09:15.087 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[2026-07-03T16:09:15.106974+00:00] setup refresh: processed 3 write roots (read roots delegated); errors=[]
+[2026-07-04 00:09:15.107 codex-windows-sandbox-setup.exe] setup binary completed
+[2026-07-04 00:09:15.114 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[2026-07-04 00:09:15.121 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03T16:09:15.122306700+00:00] read-acl-only mode: applying read ACLs
+[2026-07-04 00:09:15.122 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03T16:09:15.129050400+00:00] read ACL run completed
+[2026-07-03T16:09:15.134853+00:00] setup refresh: processed 3 write roots (read roots delegated); errors=[]
+[2026-07-04 00:09:15.134 codex-windows-sandbox-setup.exe] setup binary completed
+[2026-07-04 00:09:15.148 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-04 00:09:15.148 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03T16:09:15.151710300+00:00] read-acl-only mode: applying read ACLs
+[2026-07-03T16:09:15.154738700+00:00] read ACL run completed
+[2026-07-04 00:09:15.374 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+Select-String -Path 'outputs\index.html' -Pattern 
+[2026-07-04 00:09:15.384 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$p='outputs\index.html'; $t=[IO.File]::ReadAllText
+[2026-07-04 00:19:52.777 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+Get-Content -Raw 'outputs\index.html' | Set-Clipbo
+[2026-07-04 00:19:52.828 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[2026-07-03T16:19:52.846863200+00:00] setup refresh: processed 3 write roots (read roots delegated); errors=[]
+[2026-07-04 00:19:52.846 codex-windows-sandbox-setup.exe] setup binary completed
+[2026-07-04 00:19:52.861 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe[2026-07-03T16:19:52.864342800+00:00] 
+read-acl-only mode: applying read ACLs
+[2026-07-04 00:19:52.864 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03T16:19:52.866940900+00:00] read ACL run completed
+[2026-07-04 00:19:53.033 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+Get-Content -Raw 'outputs\index.html' | Set-Clipbo
+[2026-07-04 00:20:50.837 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$path = (Resolve-Path 'outputs\index.html').Path; 
+[2026-07-04 00:20:50.881 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[2026-07-03T16:20:50.897874200+00:00] setup refresh: processed 3 write roots (read roots delegated); errors=[]
+[2026-07-04 00:20:50.897 codex-windows-sandbox-setup.exe] setup binary completed
+[2026-07-04 00:20:50.911 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe[
+2026-07-03T16:20:50.912643600+00:00] read-acl-only mode: applying read ACLs
+[2026-07-04 00:20:50.912 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03T16:20:50.915494100+00:00] read ACL run completed
+[2026-07-04 00:20:51.117 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$path = (Resolve-Path 'outputs\index.html').Path; 
+[2026-07-04 00:28:46.936 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+Select-String -Path 'outputs\index.html' -Pattern 
+[2026-07-04 00:28:46.936 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$t=[IO.File]::ReadAllText((Resolve-Path 'outputs\i
+[2026-07-04 00:28:46.988 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[2026-07-04 00:28:46.989 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[[2026-07-03T16:28:47.011416400+00:002026-07-03T16:28:47.011415600+00:00] ] setup refresh: processed 3 write roots (read roots delegated); errors=[]setup refresh: processed 3 write roots (read roots delegated); errors=[]
+
+[2026-07-04 00:28:47.011 codex-windows-sandbox-setup.exe] setup binary completed
+[2026-07-04 00:28:47.011 codex-windows-sandbox-setup.exe] setup binary completed
+[2026-07-04 00:28:47.026 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe[2026-07-04 00:28:47.027 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[
+2026-07-03T16:28:47.028369900+00:00[] read-acl-only mode: applying read ACLs
+2026-07-03T16:28:47.028375300+00:00] read ACL helper already running; skipping
+[2026-07-04 00:28:47.028 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-04 00:28:47.028 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03T16:28:47.032789+00:00] read ACL run completed
+[2026-07-04 00:28:47.216 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$t=[IO.File]::ReadAllText((Resolve-Path 'outputs\i
+[2026-07-04 00:28:47.237 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+Select-String -Path 'outputs\index.html' -Pattern 
+[2026-07-04 00:34:46.964 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+Get-Content 'outputs\index.html' -TotalCount 160 |
+[2026-07-04 00:34:46.964 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+Select-String -Path 'outputs\index.html' -Pattern 
+[2026-07-04 00:34:47.014 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[2026-07-04 00:34:47.015 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[2026-07-03T16:34:47.033803300+00:00] setup refresh: processed 3 write roots (read roots delegated); errors=[]
+[2026-07-04 00:34:47.033 codex-windows-sandbox-setup.exe] setup binary completed
+[2026-07-03T16:34:47.037782100+00:00] setup refresh: processed 3 write roots (read roots delegated); errors=[]
+[2026-07-04 00:34:47.037 codex-windows-sandbox-setup.exe] setup binary completed
+[[2026-07-03T16:34:47.050773800+00:002026-07-03T16:34:47.050785800+00:00] ] read-acl-only mode: applying read ACLsread ACL helper already running; skipping
+
+[2026-07-04 00:34:47.051 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-04 00:34:47.052 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe[2026-07-04 00:34:47.052 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+
+[2026-07-04 00:34:47.052 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03T16:34:47.053691200+00:00] read ACL run completed
+[2026-07-04 00:34:47.242 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+Get-Content 'outputs\index.html' -TotalCount 160 |
+[2026-07-04 00:34:47.283 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+Select-String -Path 'outputs\index.html' -Pattern 
+[2026-07-04 00:35:27.521 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+Select-String -Path 'outputs\index.html' -Pattern 
+[2026-07-04 00:35:27.522 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$path=(Resolve-Path 'outputs\index.html').Path; $t
+[2026-07-04 00:35:27.575 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[2026-07-04 00:35:27.576 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[2026-07-03T16:35:27.592861100+00:00] setup refresh: processed 3 write roots (read roots delegated); errors=[]
+[2026-07-03T16:35:27.593080600+00:00] setup refresh: processed 3 write roots (read roots delegated); errors=[]
+[2026-07-04 00:35:27.592 codex-windows-sandbox-setup.exe] setup binary completed
+[2026-07-04 00:35:27.593 codex-windows-sandbox-setup.exe] setup binary completed
+[2026-07-04 00:35:27.608 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe[[2026-07-03T16:35:27.609218600+00:00
+2026-07-03T16:35:27.609224300+00:00] read-acl-only mode: applying read ACLs
+] read ACL helper already running; skipping
+[2026-07-04 00:35:27.609 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-04 00:35:27.609 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-04 00:35:27.609 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03T16:35:27.612699800+00:00] read ACL run completed
+[2026-07-04 00:35:27.812 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$path=(Resolve-Path 'outputs\index.html').Path; $t
+[2026-07-04 00:35:27.835 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+Select-String -Path 'outputs\index.html' -Pattern 
+[2026-07-04 00:36:31.774 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+Select-String -Path 'outputs\index.html' -Pattern 
+[2026-07-04 00:36:31.818 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[2026-07-03T16:36:31.837514900+00:00] setup refresh: processed 3 write roots (read roots delegated); errors=[]
+[2026-07-04 00:36:31.837 codex-windows-sandbox-setup.exe] setup binary completed
+[2026-07-04 00:36:31.852 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03T16:36:31.854926100+00:00] read-acl-only mode: applying read ACLs
+[2026-07-04 00:36:31.855 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03T16:36:31.857639400+00:00] read ACL run completed
+[2026-07-04 00:36:32.225 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+Select-String -Path 'outputs\index.html' -Pattern 
+[2026-07-04 00:36:32.239 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+Select-String -Path 'outputs\index.html' -Pattern 
+[2026-07-04 00:36:32.279 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[2026-07-03T16:36:32.297070200+00:00] setup refresh: processed 3 write roots (read roots delegated); errors=[]
+[2026-07-04 00:36:32.297 codex-windows-sandbox-setup.exe] setup binary completed
+[2026-07-04 00:36:32.310 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe[
+2026-07-03T16:36:32.312304700+00:00] read-acl-only mode: applying read ACLs
+[2026-07-04 00:36:32.312 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03T16:36:32.315200700+00:00] read ACL run completed
+[2026-07-04 00:36:32.513 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+Select-String -Path 'outputs\index.html' -Pattern 
+[2026-07-04 00:37:11.605 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+Select-String -Path 'outputs\index.html' -Pattern 
+[2026-07-04 00:37:11.606 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$path=(Resolve-Path 'outputs\index.html').Path; $t
+[2026-07-04 00:37:11.658 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[2026-07-04 00:37:11.660 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[2026-07-03T16:37:11.675152600+00:00] setup refresh: processed 3 write roots (read roots delegated); errors=[]
+[2026-07-03T16:37:11.676573300+00:00] setup refresh: processed 3 write roots (read roots delegated); errors=[]
+[2026-07-04 00:37:11.675 codex-windows-sandbox-setup.exe] setup binary completed
+[2026-07-04 00:37:11.679 codex-windows-sandbox-setup.exe] setup binary completed
+[[2026-07-03T16:37:11.691480600+00:002026-07-03T16:37:11.691487400+00:00] ] read-acl-only mode: applying read ACLs
+read ACL helper already running; skipping
+[2026-07-04 00:37:11.691 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-04 00:37:11.691 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-04 00:37:11.694 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03T16:37:11.694696200+00:00] read ACL run completed
+[2026-07-04 00:37:11.694 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-04 00:37:11.891 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+Select-String -Path 'outputs\index.html' -Pattern 
+[2026-07-04 00:37:11.903 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$path=(Resolve-Path 'outputs\index.html').Path; $t
+[2026-07-04 00:37:53.105 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+Select-String -Path 'C:\Users\HP\Downloads\index.h
+[2026-07-04 00:37:53.143 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[2026-07-03T16:37:53.164439800+00:00] setup refresh: processed 3 write roots (read roots delegated); errors=[]
+[2026-07-04 00:37:53.164 codex-windows-sandbox-setup.exe] setup binary completed
+[2026-07-04 00:37:53.177 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-04 00:37:53.177 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03T16:37:53.181082900+00:00] read-acl-only mode: applying read ACLs
+[2026-07-03T16:37:53.183559400+00:00] read ACL run completed
+[2026-07-04 00:37:53.401 codex.exe] FAILURE: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+Select-String -Path 'C:\Users\HP\Downloads\index.h (exit code 1)
+[2026-07-04 00:37:53.512 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+Select-String -Path 'outputs\index.html' -Pattern 
+[2026-07-04 00:37:53.575 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[2026-07-03T16:37:53.592450600+00:00] setup refresh: processed 3 write roots (read roots delegated); errors=[]
+[2026-07-04 00:37:53.592 codex-windows-sandbox-setup.exe] setup binary completed
+[2026-07-04 00:37:53.604 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-04 00:37:53.604 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03T16:37:53.608206600+00:00] read-acl-only mode: applying read ACLs
+[2026-07-03T16:37:53.611175200+00:00] read ACL run completed
+[2026-07-04 00:37:53.983 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+Select-String -Path 'outputs\index.html' -Pattern 
+[2026-07-04 00:41:33.027 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$src='C:\Users\HP\Downloads\index.html.html'
+$dst=
+[2026-07-04 00:41:33.069 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[2026-07-03T16:41:33.090281600+00:00] setup refresh: processed 3 write roots (read roots delegated); errors=[]
+[2026-07-04 00:41:33.090 codex-windows-sandbox-setup.exe] setup binary completed
+[2026-07-04 00:41:33.104 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-04 00:41:33.104 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03T16:41:33.108942300+00:00] read-acl-only mode: applying read ACLs
+[2026-07-03T16:41:33.111535700+00:00] read ACL run completed
+[2026-07-04 00:41:33.284 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$src='C:\Users\HP\Downloads\index.html.html'
+$dst=
+[2026-07-04 00:42:11.707 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$src='C:\Users\HP\Downloads\index.html.html'
+$dst=
+[2026-07-04 00:42:11.748 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[2026-07-03T16:42:11.765466+00:00] setup refresh: processed 3 write roots (read roots delegated); errors=[]
+[2026-07-04 00:42:11.765 codex-windows-sandbox-setup.exe] setup binary completed
+[2026-07-04 00:42:11.780 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03T16:42:11.783072600+00:00] read-acl-only mode: applying read ACLs
+[2026-07-04 00:42:11.783 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03T16:42:11.785701+00:00] read ACL run completed
+[2026-07-04 00:42:11.995 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$src='C:\Users\HP\Downloads\index.html.html'
+$dst=
+[2026-07-04 00:52:30.382 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+Get-Item 'C:\Users\HP\Downloads\index.html.html' |
+[2026-07-04 00:52:30.433 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[2026-07-03T16:52:30.452072900+00:00] setup refresh: processed 3 write roots (read roots delegated); errors=[]
+[2026-07-04 00:52:30.452 codex-windows-sandbox-setup.exe] setup binary completed
+[2026-07-04 00:52:30.465 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03T16:52:30.468292700+00:00] read-acl-only mode: applying read ACLs
+[2026-07-04 00:52:30.468 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03T16:52:30.470983600+00:00] read ACL run completed
+[2026-07-04 00:52:30.568 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$utf8=[System.Text.UTF8Encoding]::new($false,$true
+[2026-07-04 00:52:30.610 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[2026-07-03T16:52:30.630066+00:00] setup refresh: processed 3 write roots (read roots delegated); errors=[]
+[2026-07-04 00:52:30.630 codex-windows-sandbox-setup.exe] setup binary completed
+[2026-07-04 00:52:30.644 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-04 00:52:30.644 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe[2026-07-03T16:52:30.647150300+00:00
+] read-acl-only mode: applying read ACLs
+[2026-07-04 00:52:30.648 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+Get-Item 'C:\Users\HP\Downloads\index.html.html' |
+[2026-07-03T16:52:30.650013900+00:00] read ACL run completed
+[2026-07-04 00:52:30.826 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$utf8=[System.Text.UTF8Encoding]::new($false,$true
+[2026-07-04 00:52:44.323 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$utf8=[System.Text.UTF8Encoding]::new($false,$true
+[2026-07-04 00:52:44.409 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[2026-07-03T16:52:44.428311400+00:00] setup refresh: processed 3 write roots (read roots delegated); errors=[]
+[2026-07-04 00:52:44.428 codex-windows-sandbox-setup.exe] setup binary completed
+[2026-07-03T16:52:44.442688900+00:00] read-acl-only mode: applying read ACLs
+[2026-07-03T16:52:44.445435+00:00] read ACL run completed
+[2026-07-04 00:52:44.449 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-04 00:52:44.449 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-04 00:52:44.611 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$utf8=[System.Text.UTF8Encoding]::new($false,$true
+[2026-07-04 00:53:25.823 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$src='C:\Users\HP\Downloads\index.html.html'
+$dst=
+[2026-07-04 00:53:25.867 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[2026-07-03T16:53:25.892320500+00:00] setup refresh: processed 3 write roots (read roots delegated); errors=[]
+[2026-07-04 00:53:25.892 codex-windows-sandbox-setup.exe] setup binary completed
+[2026-07-04 00:53:25.912 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe[
+2026-07-03T16:53:25.914665200+00:00] read-acl-only mode: applying read ACLs
+[2026-07-04 00:53:25.914 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03T16:53:25.919078100+00:00] read ACL run completed
+[2026-07-04 00:53:26.191 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$src='C:\Users\HP\Downloads\index.html.html'
+$dst=
+[2026-07-04 01:00:52.808 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+Select-String -Path 'C:\Users\HP\Downloads\renecel
+[2026-07-04 01:00:52.810 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$p='C:\Users\HP\Downloads\renecell-index-v30-singl
+[2026-07-04 01:00:52.810 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+Get-Item 'C:\Users\HP\Downloads\renecell-index-v30
+[2026-07-04 01:00:52.874 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[2026-07-04 01:00:52.876 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[2026-07-04 01:00:52.876 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[2026-07-03T17:00:52.895187600+00:00] setup refresh: processed 3 write roots (read roots delegated); errors=[]
+[2026-07-03T17:00:52.895771400+00:00] setup refresh: processed 3 write roots (read roots delegated); errors=[]
+[2026-07-04 01:00:52.895 codex-windows-sandbox-setup.exe] setup binary completed
+[2026-07-04 01:00:52.895 codex-windows-sandbox-setup.exe] setup binary completed
+[2026-07-03T17:00:52.899719700+00:00] setup refresh: processed 3 write roots (read roots delegated); errors=[]
+[2026-07-04 01:00:52.899 codex-windows-sandbox-setup.exe] setup binary completed
+[[2026-07-04 01:00:52.914 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe2026-07-03T17:00:52.915249400+00:00
+[] 2026-07-03T17:00:52.915282600+00:00] read ACL helper already running; skipping
+read-acl-only mode: applying read ACLs
+[2026-07-03T17:00:52.918892900+00:00] read ACL run completed
+[2026-07-04 01:00:52.915 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe[2026-07-04 01:00:52.916 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[
+2026-07-03T17:00:52.925320600+00:00[2026-07-04 01:00:52.920 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe] 
+read-acl-only mode: applying read ACLs
+[2026-07-04 01:00:52.925 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-04 01:00:52.925 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03T17:00:52.929000600+00:00] read ACL run completed
+[2026-07-04 01:00:53.147 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+Get-Item 'C:\Users\HP\Downloads\renecell-index-v30
+[2026-07-04 01:00:53.184 codex.exe] FAILURE: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$p='C:\Users\HP\Downloads\renecell-index-v30-singl (exit code 1)
+[2026-07-04 01:00:53.204 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+Select-String -Path 'C:\Users\HP\Downloads\renecel
+[2026-07-04 01:01:10.307 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+Select-String -Path 'C:\Users\HP\Downloads\renecel
+[2026-07-04 01:01:10.308 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$p='C:\Users\HP\Downloads\renecell-index-v30-singl
+[2026-07-04 01:01:10.354 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[2026-07-04 01:01:10.355 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[2026-07-03T17:01:10.375731100+00:00] setup refresh: processed 3 write roots (read roots delegated); errors=[]
+[2026-07-03T17:01:10.375831500+00:00] setup refresh: processed 3 write roots (read roots delegated); errors=[]
+[2026-07-04 01:01:10.375 codex-windows-sandbox-setup.exe] setup binary completed
+[2026-07-04 01:01:10.375 codex-windows-sandbox-setup.exe] setup binary completed
+[[2026-07-04 01:01:10.392 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe2026-07-03T17:01:10.393884700+00:00
+[] [2026-07-04 01:01:10.393 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe2026-07-03T17:01:10.393890700+00:00read-acl-only mode: applying read ACLs] 
+
+read ACL helper already running; skipping
+[2026-07-04 01:01:10.394 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-04 01:01:10.394 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03T17:01:10.396925400+00:00] read ACL run completed
+[2026-07-04 01:01:10.584 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$p='C:\Users\HP\Downloads\renecell-index-v30-singl
+[2026-07-04 01:01:10.602 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+Select-String -Path 'C:\Users\HP\Downloads\renecel
+[2026-07-04 01:01:19.761 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+Get-Content 'C:\Users\HP\Downloads\renecell-index-
+[2026-07-04 01:01:19.806 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[2026-07-03T17:01:19.826126500+00:00] setup refresh: processed 3 write roots (read roots delegated); errors=[]
+[2026-07-04 01:01:19.826 codex-windows-sandbox-setup.exe] setup binary completed
+[[2026-07-04 01:01:19.841 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+2026-07-03T17:01:19.842574600+00:00] read-acl-only mode: applying read ACLs
+[2026-07-04 01:01:19.842 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03T17:01:19.845257200+00:00] read ACL run completed
+[2026-07-04 01:01:20.014 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+Get-Content 'C:\Users\HP\Downloads\renecell-index-
+[2026-07-04 01:01:35.925 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$p='C:\Users\HP\Downloads\renecell-index-v30-singl
+[2026-07-04 01:01:35.926 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$p='C:\Users\HP\Downloads\renecell-index-v30-singl
+[2026-07-04 01:01:35.975 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[2026-07-04 01:01:35.976 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[2026-07-03T17:01:35.995088900+00:00] setup refresh: processed 3 write roots (read roots delegated); errors=[]
+[2026-07-03T17:01:35.995284300+00:00] setup refresh: processed 3 write roots (read roots delegated); errors=[]
+[2026-07-04 01:01:35.995 codex-windows-sandbox-setup.exe] setup binary completed
+[2026-07-04 01:01:35.995 codex-windows-sandbox-setup.exe] setup binary completed
+[[2026-07-03T17:01:36.011813400+00:00] read-acl-only mode: applying read ACLs
+2026-07-03T17:01:36.011817300+00:00] read ACL helper already running; skipping
+[2026-07-04 01:01:36.013 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-04 01:01:36.013 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-04 01:01:36.014 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-04 01:01:36.015 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03T17:01:36.015513700+00:00] read ACL run completed
+[2026-07-04 01:01:36.196 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$p='C:\Users\HP\Downloads\renecell-index-v30-singl
+[2026-07-04 01:01:36.209 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$p='C:\Users\HP\Downloads\renecell-index-v30-singl
+[2026-07-04 01:02:09.623 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$src='C:\Users\HP\Downloads\renecell-index-v30-sin
+[2026-07-04 01:02:09.666 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[2026-07-03T17:02:09.686181100+00:00] setup refresh: processed 3 write roots (read roots delegated); errors=[]
+[2026-07-04 01:02:09.686 codex-windows-sandbox-setup.exe] setup binary completed
+[2026-07-04 01:02:09.700 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-04 01:02:09.700 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03T17:02:09.703423800+00:00] read-acl-only mode: applying read ACLs
+[2026-07-03T17:02:09.706282200+00:00] read ACL run completed
+[2026-07-04 01:02:09.928 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$src='C:\Users\HP\Downloads\renecell-index-v30-sin
+[2026-07-04 01:09:10.952 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+Get-ChildItem -Path 'C:\Users\HP\Documents\Codex\2
+[2026-07-04 01:09:10.953 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+Get-ChildItem -Path 'C:\Users\HP\Downloads' -File 
+[2026-07-04 01:09:11.004 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[2026-07-04 01:09:11.005 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[2026-07-03T17:09:11.026461700+00:00] setup refresh: processed 3 write roots (read roots delegated); errors=[]
+[2026-07-03T17:09:11.029060200+00:00] setup refresh: processed 3 write roots (read roots delegated); errors=[]
+[2026-07-04 01:09:11.026 codex-windows-sandbox-setup.exe] setup binary completed
+[2026-07-04 01:09:11.030 codex-windows-sandbox-setup.exe] setup binary completed
+[2026-07-04 01:09:11.044 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[[2026-07-03T17:09:11.045309400+00:002026-07-03T17:09:11.045305200+00:00] ] read-acl-only mode: applying read ACLs
+read ACL helper already running; skipping
+[2026-07-04 01:09:11.045 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-04 01:09:11.046 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-04 01:09:11.047 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03T17:09:11.048164+00:00] read ACL run completed
+[2026-07-04 01:09:11.232 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+Get-ChildItem -Path 'C:\Users\HP\Downloads' -File 
+[2026-07-04 01:09:11.240 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+Get-ChildItem -Path 'C:\Users\HP\Documents\Codex\2
+[2026-07-04 01:11:53.208 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$path='C:\Users\HP\Documents\Codex\2026-07-03\file
+[2026-07-04 01:11:53.258 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[2026-07-03T17:11:53.276629+00:00] setup refresh: processed 3 write roots (read roots delegated); errors=[]
+[2026-07-04 01:11:53.276 codex-windows-sandbox-setup.exe] setup binary completed
+[2026-07-04 01:11:53.290 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03T17:11:53.292847400+00:00] read-acl-only mode: applying read ACLs
+[2026-07-04 01:11:53.292 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03T17:11:53.295731500+00:00] read ACL run completed
+[2026-07-04 01:11:53.480 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$path='C:\Users\HP\Documents\Codex\2026-07-03\file
+[2026-07-04 01:28:24.853 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+Get-Item outputs\index.html | Select-Object FullNa
+[2026-07-04 01:28:24.856 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+rg -n "輸出圖片|downloadBtn|shareBtn|export|ac
+[2026-07-04 01:28:24.904 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[2026-07-04 01:28:24.906 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[2026-07-03T17:28:24.926328600+00:00] setup refresh: processed 3 write roots (read roots delegated); errors=[]
+[2026-07-03T17:28:24.927749100+00:00] setup refresh: processed 3 write roots (read roots delegated); errors=[]
+[2026-07-04 01:28:24.926 codex-windows-sandbox-setup.exe] setup binary completed
+[2026-07-04 01:28:24.930 codex-windows-sandbox-setup.exe] setup binary completed
+[2026-07-03T17:28:24.944515100+00:00] [read-acl-only mode: applying read ACLs2026-07-03T17:28:24.944535200+00:00] 
+read ACL helper already running; skipping
+[2026-07-04 01:28:24.944 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-04 01:28:24.944 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-04 01:28:24.946 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-04 01:28:24.946 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03T17:28:24.947723600+00:00] read ACL run completed
+[2026-07-04 01:28:25.120 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+rg -n "輸出圖片|downloadBtn|shareBtn|export|ac
+[2026-07-04 01:28:25.132 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+Get-Item outputs\index.html | Select-Object FullNa
+[2026-07-04 01:28:32.295 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$lines=Get-Content -LiteralPath outputs\index.html
+[2026-07-04 01:28:32.295 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$lines=Get-Content -LiteralPath outputs\index.html
+[2026-07-04 01:28:32.343 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[2026-07-04 01:28:32.344 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[2026-07-03T17:28:32.365937600+00:00] setup refresh: processed 3 write roots (read roots delegated); errors=[]
+[2026-07-03T17:28:32.366544400+00:00] setup refresh: processed 3 write roots (read roots delegated); errors=[]
+[2026-07-04 01:28:32.365 codex-windows-sandbox-setup.exe] setup binary completed[2026-07-04 01:28:32.366 codex-windows-sandbox-setup.exe] setup binary completed
+
+[2026-07-04 01:28:32.383 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03T17:28:32.384372+00:00[] 2026-07-03T17:28:32.384382700+00:00] read-acl-only mode: applying read ACLsread ACL helper already running; skipping
+
+[2026-07-04 01:28:32.384 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-04 01:28:32.384 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-04 01:28:32.384 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03T17:28:32.388365600+00:00] read ACL run completed
+[2026-07-04 01:28:32.535 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$lines=Get-Content -LiteralPath outputs\index.html
+[2026-07-04 01:28:32.536 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$lines=Get-Content -LiteralPath outputs\index.html
+[2026-07-04 01:28:40.216 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$lines=Get-Content -LiteralPath outputs\index.html
+[2026-07-04 01:28:40.217 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$lines=Get-Content -LiteralPath outputs\index.html
+[2026-07-04 01:28:40.269 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[2026-07-04 01:28:40.269 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[2026-07-03T17:28:40.293471100+00:00] setup refresh: processed 3 write roots (read roots delegated); errors=[]
+[2026-07-03T17:28:40.294020700+00:00] setup refresh: processed 3 write roots (read roots delegated); errors=[]
+[2026-07-04 01:28:40.293 codex-windows-sandbox-setup.exe] setup binary completed[2026-07-04 01:28:40.294 codex-windows-sandbox-setup.exe] setup binary completed
+
+[[2026-07-04 01:28:40.311 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe2026-07-03T17:28:40.312189100+00:00[] 
+read-acl-only mode: applying read ACLs2026-07-03T17:28:40.312219200+00:00
+] read ACL helper already running; skipping
+[2026-07-04 01:28:40.312 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-04 01:28:40.312 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-04 01:28:40.312 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03T17:28:40.315943900+00:00] read ACL run completed
+[2026-07-04 01:28:40.472 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$lines=Get-Content -LiteralPath outputs\index.html
+[2026-07-04 01:28:40.480 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$lines=Get-Content -LiteralPath outputs\index.html
+[2026-07-04 01:29:11.410 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$p='outputs\index.html'; $t=[System.IO.File]::Read
+[2026-07-04 01:29:11.410 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$p='outputs\index.html'; $t=[System.IO.File]::Read
+[2026-07-04 01:29:11.473 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[2026-07-04 01:29:11.475 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[2026-07-03T17:29:11.491169600+00:00] setup refresh: processed 3 write roots (read roots delegated); errors=[]
+[2026-07-03T17:29:11.492743600+00:00] [2026-07-04 01:29:11.491 codex-windows-sandbox-setup.exe] setup binary completedsetup refresh: processed 3 write roots (read roots delegated); errors=[]
+
+[2026-07-04 01:29:11.493 codex-windows-sandbox-setup.exe] setup binary completed
+[2026-07-04 01:29:11.506 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe[
+2026-07-03T17:29:11.507680900+00:00] read-acl-only mode: applying read ACLs
+[2026-07-03T17:29:11.507683900+00:00] read ACL helper already running; skipping
+[2026-07-04 01:29:11.507 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-04 01:29:11.509 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-04 01:29:11.509 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03T17:29:11.510712500+00:00] read ACL run completed
+[2026-07-04 01:29:11.740 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$p='outputs\index.html'; $t=[System.IO.File]::Read
+[2026-07-04 01:29:12.185 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$p='outputs\index.html'; $t=[System.IO.File]::Read
+[2026-07-04 01:29:17.954 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$path='C:\Users\HP\Documents\Codex\2026-07-03\file
+[2026-07-04 01:29:17.995 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[2026-07-03T17:29:18.013060700+00:00] setup refresh: processed 3 write roots (read roots delegated); errors=[]
+[2026-07-04 01:29:18.013 codex-windows-sandbox-setup.exe] setup binary completed
+[2026-07-04 01:29:18.025 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-04 01:29:18.025 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03T17:29:18.031057900+00:00] read-acl-only mode: applying read ACLs
+[2026-07-03T17:29:18.034182400+00:00] read ACL run completed
+[2026-07-04 01:29:18.186 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$path='C:\Users\HP\Documents\Codex\2026-07-03\file
+[2026-07-04 01:30:05.457 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+(Get-Content -LiteralPath outputs\index.html -Enco
+[2026-07-04 01:30:05.501 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[2026-07-03T17:30:05.520954200+00:00] setup refresh: processed 3 write roots (read roots delegated); errors=[]
+[2026-07-04 01:30:05.520 codex-windows-sandbox-setup.exe] setup binary completed
+[2026-07-04 01:30:05.535 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-04 01:30:05.535 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03T17:30:05.538369900+00:00] read-acl-only mode: applying read ACLs
+[2026-07-03T17:30:05.540903700+00:00] read ACL run completed
+[2026-07-04 01:30:05.721 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+(Get-Content -LiteralPath outputs\index.html -Enco
+[2026-07-04 01:30:18.260 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$path='C:\Users\HP\Documents\Codex\2026-07-03\file
+[2026-07-04 01:30:18.308 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[2026-07-03T17:30:18.327147+00:00] setup refresh: processed 3 write roots (read roots delegated); errors=[]
+[2026-07-04 01:30:18.327 codex-windows-sandbox-setup.exe] setup binary completed
+[2026-07-04 01:30:18.341 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-04 01:30:18.341 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03T17:30:18.344565200+00:00] read-acl-only mode: applying read ACLs
+[2026-07-03T17:30:18.347141700+00:00] read ACL run completed
+[2026-07-04 01:30:18.568 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$path='C:\Users\HP\Documents\Codex\2026-07-03\file
+[2026-07-04 01:38:38.659 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$lines=Get-Content -LiteralPath outputs\index.html
+[2026-07-04 01:38:38.659 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$lines=Get-Content -LiteralPath outputs\index.html
+[2026-07-04 01:38:38.709 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[2026-07-04 01:38:38.709 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[2026-07-03T17:38:38.729110600+00:00] setup refresh: processed 3 write roots (read roots delegated); errors=[]
+[2026-07-03T17:38:38.729508100+00:00] setup refresh: processed 3 write roots (read roots delegated); errors=[]
+[2026-07-04 01:38:38.729 codex-windows-sandbox-setup.exe] setup binary completed
+[2026-07-04 01:38:38.729 codex-windows-sandbox-setup.exe] setup binary completed
+[[2026-07-04 01:38:38.744 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe2026-07-03T17:38:38.745231100+00:00[] 
+2026-07-03T17:38:38.745240200+00:00read-acl-only mode: applying read ACLs] 
+read ACL helper already running; skipping
+[2026-07-04 01:38:38.745 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-04 01:38:38.745 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-04 01:38:38.745 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03T17:38:38.747907900+00:00] read ACL run completed
+[2026-07-04 01:38:38.897 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$lines=Get-Content -LiteralPath outputs\index.html
+[2026-07-04 01:38:38.907 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$lines=Get-Content -LiteralPath outputs\index.html
+[2026-07-04 01:38:47.229 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$lines=Get-Content -LiteralPath outputs\index.html
+[2026-07-04 01:38:47.270 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[2026-07-03T17:38:47.287839200+00:00] setup refresh: processed 3 write roots (read roots delegated); errors=[]
+[2026-07-04 01:38:47.287 codex-windows-sandbox-setup.exe] setup binary completed
+[2026-07-04 01:38:47.301 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-04 01:38:47.301 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03T17:38:47.305026600+00:00] read-acl-only mode: applying read ACLs
+[2026-07-03T17:38:47.307542+00:00] read ACL run completed
+[2026-07-04 01:38:47.458 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$lines=Get-Content -LiteralPath outputs\index.html
+[2026-07-04 01:39:11.944 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$lines=Get-Content -LiteralPath outputs\index.html[2026-07-04 01:39:11.944 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$lines=Get-Content -LiteralPath outputs\index.html
+
+[2026-07-04 01:39:11.995 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[2026-07-04 01:39:11.995 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[2026-07-03T17:39:12.013868900+00:00] setup refresh: processed 3 write roots (read roots delegated); errors=[]
+[2026-07-03T17:39:12.013969300+00:00] setup refresh: processed 3 write roots (read roots delegated); errors=[]
+[2026-07-04 01:39:12.013 codex-windows-sandbox-setup.exe] setup binary completed
+[2026-07-04 01:39:12.013 codex-windows-sandbox-setup.exe] setup binary completed
+[2026-07-04 01:39:12.029 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe[
+[2026-07-03T17:39:12.029626100+00:002026-07-03T17:39:12.029636300+00:00] ] read-acl-only mode: applying read ACLsread ACL helper already running; skipping
+
+[2026-07-04 01:39:12.029 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-04 01:39:12.030 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-04 01:39:12.030 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03T17:39:12.033195700+00:00] read ACL run completed
+[2026-07-04 01:39:12.185 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$lines=Get-Content -LiteralPath outputs\index.html
+[2026-07-04 01:39:12.188 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$lines=Get-Content -LiteralPath outputs\index.html
+[2026-07-04 01:40:02.874 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+(Get-Content -LiteralPath outputs\index.html -Enco
+[2026-07-04 01:40:02.874 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$p='outputs\index.html'; $t=[System.IO.File]::Read
+[2026-07-04 01:40:02.929 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[2026-07-04 01:40:02.933 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[2026-07-03T17:40:02.950482900+00:00] setup refresh: processed 3 write roots (read roots delegated); errors=[]
+[2026-07-04 01:40:02.950 codex-windows-sandbox-setup.exe] setup binary completed
+[2026-07-03T17:40:02.955901400+00:00] setup refresh: processed 3 write roots (read roots delegated); errors=[]
+[2026-07-04 01:40:02.955 codex-windows-sandbox-setup.exe] setup binary completed
+[2026-07-03T17:40:02.968263900+00:00] read-acl-only mode: applying read ACLs
+[2026-07-04 01:40:02.969 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-04 01:40:02.969 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03T17:40:02.971311800+00:00] read ACL run completed
+[2026-07-04 01:40:02.971 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-04 01:40:02.971 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03T17:40:02.975088900+00:00] read-acl-only mode: applying read ACLs
+[2026-07-03T17:40:02.977770800+00:00] read ACL run completed
+[2026-07-04 01:40:03.129 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$p='outputs\index.html'; $t=[System.IO.File]::Read
+[2026-07-04 01:40:03.162 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+(Get-Content -LiteralPath outputs\index.html -Enco
+[2026-07-04 01:40:09.786 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$path='C:\Users\HP\Documents\Codex\2026-07-03\file
+[2026-07-04 01:40:09.842 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[2026-07-03T17:40:09.860242700+00:00] setup refresh: processed 3 write roots (read roots delegated); errors=[]
+[2026-07-04 01:40:09.860 codex-windows-sandbox-setup.exe] setup binary completed
+[2026-07-04 01:40:09.872 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe[
+2026-07-03T17:40:09.874923800+00:00] read-acl-only mode: applying read ACLs
+[2026-07-04 01:40:09.875 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03T17:40:09.877692600+00:00] read ACL run completed
+[2026-07-04 01:40:10.034 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$path='C:\Users\HP\Documents\Codex\2026-07-03\file
+[2026-07-04 01:47:37.717 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+rg -n "poster-card|cards|card-img|card-name|chip|s
+[2026-07-04 01:47:37.717 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$lines=Get-Content -LiteralPath outputs\index.html
+[2026-07-04 01:47:37.717 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$lines=Get-Content -LiteralPath outputs\index.html
+[2026-07-04 01:47:37.777 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[2026-07-04 01:47:37.779 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)[2026-07-04 01:47:37.779 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+
+[2026-07-03T17:47:37.795564900+00:00] setup error: apply deny-read ACLs
+
+Caused by:
+    0: parse deny-read ACL state C:\Users\HP\.codex\.sandbox\deny_read_acl_state.json
+    1: EOF while parsing a value at line 1 column 0
+[2026-07-04 01:47:37.795 codex-windows-sandbox-setup.exe] setup error: apply deny-read ACLs
+
+Caused by:
+    0: parse deny-read ACL state C:\Users\HP\.codex\.sandbox\deny_read_acl_state.json
+    1: EOF while parsing a value at line 1 column 0
+[2026-07-03T17:47:37.800534700+00:00] setup refresh: processed 3 write roots (read roots delegated); errors=[]
+[2026-07-03T17:47:37.800534700+00:00] setup refresh: processed 3 write roots (read roots delegated); errors=[]
+[2026-07-04 01:47:37.800 codex-windows-sandbox-setup.exe] setup binary completed[2026-07-04 01:47:37.800 codex-windows-sandbox-setup.exe] setup binary completed[2026-07-04 01:47:37.801 codex.exe] setup refresh: exited with status ExitStatus(ExitStatus(1))
+
+
+[2026-07-04 01:47:37.816 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe[[2026-07-04 01:47:37.817 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+
+2026-07-03T17:47:37.818784900+00:00] [read-acl-only mode: applying read ACLs2026-07-03T17:47:37.818835800+00:00] read ACL helper already running; skipping
+
+[2026-07-04 01:47:37.818 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-04 01:47:37.818 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03T17:47:37.822306500+00:00] read ACL run completed
+[2026-07-04 01:47:37.973 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+rg -n "poster-card|cards|card-img|card-name|chip|s
+[2026-07-04 01:47:37.979 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$lines=Get-Content -LiteralPath outputs\index.html
+[2026-07-04 01:47:49.056 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$lines=Get-Content -LiteralPath outputs\index.html
+[2026-07-04 01:47:49.134 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[2026-07-03T17:47:49.159350600+00:00] setup refresh: processed 3 write roots (read roots delegated); errors=[]
+[2026-07-04 01:47:49.159 codex-windows-sandbox-setup.exe] setup binary completed
+[2026-07-03T17:47:49.177317300+00:00] read-acl-only mode: applying read ACLs
+[2026-07-04 01:47:49.180 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe[
+2026-07-03T17:47:49.180804100+00:00] read ACL run completed
+[2026-07-04 01:47:49.180 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-04 01:47:49.333 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$lines=Get-Content -LiteralPath outputs\index.html
+[2026-07-04 01:48:31.092 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$lines=Get-Content -LiteralPath outputs\index.html
+[2026-07-04 01:48:31.147 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[2026-07-03T17:48:31.164136200+00:00] setup refresh: processed 3 write roots (read roots delegated); errors=[]
+[2026-07-04 01:48:31.164 codex-windows-sandbox-setup.exe] setup binary completed
+[2026-07-04 01:48:31.176 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-04 01:48:31.176 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03T17:48:31.180304300+00:00] read-acl-only mode: applying read ACLs
+[2026-07-03T17:48:31.182814900+00:00] read ACL run completed
+[2026-07-04 01:48:31.362 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$lines=Get-Content -LiteralPath outputs\index.html
+[2026-07-04 01:48:47.263 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+(Get-Content -LiteralPath outputs\index.html -Enco
+[2026-07-04 01:48:47.263 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$p='outputs\index.html'; $t=[System.IO.File]::Read
+[2026-07-04 01:48:47.315 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[2026-07-04 01:48:47.316 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[2026-07-03T17:48:47.334409500+00:00] setup refresh: processed 3 write roots (read roots delegated); errors=[]
+[2026-07-04 01:48:47.334 codex-windows-sandbox-setup.exe] setup binary completed
+[2026-07-03T17:48:47.339626200+00:00] setup refresh: processed 3 write roots (read roots delegated); errors=[]
+[2026-07-04 01:48:47.339 codex-windows-sandbox-setup.exe] setup binary completed
+[2026-07-04 01:48:47.349 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-04 01:48:47.350 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[[[2026-07-04 01:48:47.354 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe2026-07-03T17:48:47.355964700+00:002026-07-03T17:48:47.355977500+00:00
+] ] read ACL helper already running; skippingread-acl-only mode: applying read ACLs
+
+[2026-07-04 01:48:47.356 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03T17:48:47.359273800+00:00] read ACL run completed
+[2026-07-04 01:48:47.538 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$p='outputs\index.html'; $t=[System.IO.File]::Read
+[2026-07-04 01:48:47.538 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+(Get-Content -LiteralPath outputs\index.html -Enco
+[2026-07-04 01:48:54.288 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$path='C:\Users\HP\Documents\Codex\2026-07-03\file
+[2026-07-04 01:48:54.326 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[2026-07-03T17:48:54.344991800+00:00] setup refresh: processed 3 write roots (read roots delegated); errors=[]
+[2026-07-04 01:48:54.345 codex-windows-sandbox-setup.exe] setup binary completed
+[2026-07-04 01:48:54.357 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-04 01:48:54.357 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03T17:48:54.364664700+00:00] read-acl-only mode: applying read ACLs
+[2026-07-03T17:48:54.367571100+00:00] read ACL run completed
+[2026-07-04 01:48:54.518 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$path='C:\Users\HP\Documents\Codex\2026-07-03\file
+[2026-07-04 01:53:31.690 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$lines=Get-Content -LiteralPath outputs\index.html
+[2026-07-04 01:53:31.690 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$lines=Get-Content -LiteralPath outputs\index.html
+[2026-07-04 01:53:31.741 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[2026-07-04 01:53:31.742 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[2026-07-03T17:53:31.762580500+00:00] setup refresh: processed 3 write roots (read roots delegated); errors=[]
+[2026-07-03T17:53:31.765276700+00:00] setup refresh: processed 3 write roots (read roots delegated); errors=[]
+[2026-07-04 01:53:31.762 codex-windows-sandbox-setup.exe] setup binary completed
+[2026-07-04 01:53:31.765 codex-windows-sandbox-setup.exe] setup binary completed
+[2026-07-04 01:53:31.778 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe[
+2026-07-03T17:53:31.781124600+00:00] read-acl-only mode: applying read ACLs
+[2026-07-03T17:53:31.784265600+00:00] read ACL run completed
+[2026-07-04 01:53:31.781 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03T17:53:31.789003400+00:00] read-acl-only mode: applying read ACLs
+[2026-07-04 01:53:31.781 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-04 01:53:31.789 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03T17:53:31.792057+00:00] read ACL run completed
+[2026-07-04 01:53:31.941 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$lines=Get-Content -LiteralPath outputs\index.html
+[2026-07-04 01:53:31.949 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$lines=Get-Content -LiteralPath outputs\index.html
+[2026-07-04 01:54:05.549 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+(Get-Content -LiteralPath outputs\index.html -Enco
+[2026-07-04 01:54:05.596 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[2026-07-03T17:54:05.616901700+00:00] setup refresh: processed 3 write roots (read roots delegated); errors=[]
+[2026-07-04 01:54:05.616 codex-windows-sandbox-setup.exe] setup binary completed
+[2026-07-04 01:54:05.629 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-04 01:54:05.630 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03T17:54:05.633209400+00:00] read-acl-only mode: applying read ACLs
+[2026-07-03T17:54:05.635734+00:00] read ACL run completed
+[2026-07-04 01:54:05.886 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+(Get-Content -LiteralPath outputs\index.html -Enco
+[2026-07-04 01:54:27.673 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+(Get-Content -LiteralPath outputs\index.html -Enco
+[2026-07-04 01:54:27.673 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$p='outputs\index.html'; $t=[System.IO.File]::Read
+[2026-07-04 01:54:27.728 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[2026-07-04 01:54:27.733 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[2026-07-03T17:54:27.746997400+00:00] setup refresh: processed 3 write roots (read roots delegated); errors=[]
+[2026-07-03T17:54:27.748283300+00:00] setup refresh: processed 3 write roots (read roots delegated); errors=[]
+[2026-07-04 01:54:27.747 codex-windows-sandbox-setup.exe] setup binary completed
+[2026-07-04 01:54:27.750 codex-windows-sandbox-setup.exe] setup binary completed
+[2026-07-04 01:54:27.762 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe[[
+2026-07-03T17:54:27.764624300+00:002026-07-03T17:54:27.764634100+00:00] ] read ACL helper already running; skipping
+read-acl-only mode: applying read ACLs
+[2026-07-04 01:54:27.764 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-04 01:54:27.766 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-04 01:54:27.767 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03T17:54:27.768546700+00:00] read ACL run completed
+[2026-07-04 01:54:27.933 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$p='outputs\index.html'; $t=[System.IO.File]::Read
+[2026-07-04 01:54:27.956 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+(Get-Content -LiteralPath outputs\index.html -Enco
+[2026-07-04 01:54:34.768 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$path='C:\Users\HP\Documents\Codex\2026-07-03\file
+[2026-07-04 01:54:34.809 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[2026-07-03T17:54:34.826595300+00:00] setup refresh: processed 3 write roots (read roots delegated); errors=[]
+[2026-07-04 01:54:34.826 codex-windows-sandbox-setup.exe] setup binary completed
+[2026-07-04 01:54:34.839 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-04 01:54:34.839 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03T17:54:34.842817800+00:00] read-acl-only mode: applying read ACLs
+[2026-07-03T17:54:34.845608100+00:00] read ACL run completed
+[2026-07-04 01:54:34.999 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$path='C:\Users\HP\Documents\Codex\2026-07-03\file
+[2026-07-04 01:55:56.293 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$path='C:\Users\HP\Documents\Codex\2026-07-03\file
+[2026-07-04 01:55:56.343 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[2026-07-03T17:55:56.362946100+00:00] setup refresh: processed 3 write roots (read roots delegated); errors=[]
+[2026-07-04 01:55:56.362 codex-windows-sandbox-setup.exe] setup binary completed
+[2026-07-04 01:55:56.377 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-04 01:55:56.377 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03T17:55:56.380270400+00:00] read-acl-only mode: applying read ACLs
+[2026-07-03T17:55:56.383352700+00:00] read ACL run completed
+[2026-07-04 01:55:56.545 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$path='C:\Users\HP\Documents\Codex\2026-07-03\file
+[2026-07-04 01:57:00.645 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+Get-Content -LiteralPath 'C:\Users\HP\.codex\plugi
+[2026-07-04 01:57:00.693 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[2026-07-03T17:57:00.713323100+00:00] setup refresh: processed 3 write roots (read roots delegated); errors=[]
+[2026-07-04 01:57:00.713 codex-windows-sandbox-setup.exe] setup binary completed
+[2026-07-04 01:57:00.728 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03T17:57:00.729927300+00:00] read-acl-only mode: applying read ACLs
+[2026-07-04 01:57:00.729 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03T17:57:00.733020700+00:00] read ACL run completed
+[2026-07-04 01:57:00.871 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+Get-Content -LiteralPath 'C:\Users\HP\.codex\plugi
+[2026-07-04 01:57:18.185 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+[System.IO.File]::ReadAllText('C:\Users\HP\Documen
+[2026-07-04 01:57:18.232 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[2026-07-03T17:57:18.249351800+00:00] setup refresh: processed 3 write roots (read roots delegated); errors=[]
+[2026-07-04 01:57:18.249 codex-windows-sandbox-setup.exe] setup binary completed
+[2026-07-04 01:57:18.264 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03T17:57:18.265845900+00:00] read-acl-only mode: applying read ACLs
+[2026-07-04 01:57:18.265 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03T17:57:18.268886800+00:00] read ACL run completed
+[2026-07-04 01:57:18.398 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+[System.IO.File]::ReadAllText('C:\Users\HP\Documen
+[2026-07-04 02:02:55.198 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$lines=Get-Content -LiteralPath outputs\index.html[2026-07-04 02:02:55.198 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$lines=Get-Content -LiteralPath outputs\index.html
+
+[2026-07-04 02:02:55.255 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[2026-07-04 02:02:55.255 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[2026-07-03T18:02:55.274892300+00:00] setup refresh: processed 3 write roots (read roots delegated); errors=[]
+[2026-07-03T18:02:55.276941800+00:00[2026-07-04 02:02:55.274 codex-windows-sandbox-setup.exe] setup binary completed] 
+setup refresh: processed 3 write roots (read roots delegated); errors=[]
+[2026-07-04 02:02:55.278 codex-windows-sandbox-setup.exe] setup binary completed
+[2026-07-03T18:02:55.292758900+00:00] read ACL helper already running; skipping
+[2026-07-04 02:02:55.292 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03T18:02:55.292756300+00:00[2026-07-04 02:02:55.292 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+] read-acl-only mode: applying read ACLs
+[2026-07-04 02:02:55.294 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-04 02:02:55.294 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03T18:02:55.296251200+00:00] read ACL run completed
+[2026-07-04 02:02:55.451 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$lines=Get-Content -LiteralPath outputs\index.html
+[2026-07-04 02:02:55.459 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$lines=Get-Content -LiteralPath outputs\index.html
+[2026-07-04 02:04:30.971 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$lines=Get-Content -LiteralPath outputs\index.html
+[2026-07-04 02:04:30.971 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$lines=Get-Content -LiteralPath outputs\index.html
+[2026-07-04 02:04:31.030 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[2026-07-04 02:04:31.031 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[[2026-07-03T18:04:31.050615+00:00] 2026-07-03T18:04:31.050618100+00:00setup refresh: processed 3 write roots (read roots delegated); errors=[]
+] setup refresh: processed 3 write roots (read roots delegated); errors=[]
+[2026-07-04 02:04:31.050 codex-windows-sandbox-setup.exe] setup binary completed
+[2026-07-04 02:04:31.050 codex-windows-sandbox-setup.exe] setup binary completed
+[2026-07-04 02:04:31.066 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe[[
+2026-07-03T18:04:31.067460800+00:002026-07-03T18:04:31.067478100+00:00] ] read-acl-only mode: applying read ACLs
+read ACL helper already running; skipping
+[2026-07-04 02:04:31.067 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-04 02:04:31.069 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-04 02:04:31.069 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03T18:04:31.070689100+00:00] read ACL run completed
+[2026-07-04 02:04:31.223 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$lines=Get-Content -LiteralPath outputs\index.html
+[2026-07-04 02:04:31.231 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$lines=Get-Content -LiteralPath outputs\index.html
+[2026-07-04 02:04:37.224 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$lines=Get-Content -LiteralPath outputs\index.html
+[2026-07-04 02:04:37.263 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[2026-07-03T18:04:37.280643200+00:00] setup refresh: processed 3 write roots (read roots delegated); errors=[]
+[2026-07-04 02:04:37.280 codex-windows-sandbox-setup.exe] setup binary completed
+[2026-07-04 02:04:37.294 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe[
+2026-07-03T18:04:37.296424+00:00] read-acl-only mode: applying read ACLs
+[2026-07-04 02:04:37.296 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03T18:04:37.299512600+00:00] read ACL run completed
+[2026-07-04 02:04:37.441 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$lines=Get-Content -LiteralPath outputs\index.html
+[2026-07-04 02:05:38.643 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$p='outputs\index.html'; $t=[System.IO.File]::Read
+[2026-07-04 02:05:38.693 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[2026-07-03T18:05:38.712544300+00:00] setup refresh: processed 3 write roots (read roots delegated); errors=[]
+[2026-07-04 02:05:38.712 codex-windows-sandbox-setup.exe] setup binary completed
+[2026-07-04 02:05:38.726 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03T18:05:38.728646500+00:00] read-acl-only mode: applying read ACLs
+[2026-07-04 02:05:38.728 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03T18:05:38.731417500+00:00] read ACL run completed
+[2026-07-04 02:05:38.885 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$p='outputs\index.html'; $t=[System.IO.File]::Read
+[2026-07-04 02:05:49.793 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+gh auth status
+[2026-07-04 02:05:49.840 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[2026-07-03T18:05:49.856957+00:00] setup refresh: processed 3 write roots (read roots delegated); errors=[]
+[2026-07-04 02:05:49.856 codex-windows-sandbox-setup.exe] setup binary completed
+[2026-07-04 02:05:49.872 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-04 02:05:49.872 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03T18:05:49.875419100+00:00] read-acl-only mode: applying read ACLs
+[2026-07-03T18:05:49.878097300+00:00] read ACL run completed
+[2026-07-04 02:05:50.067 codex.exe] FAILURE: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+gh auth status (exit code 1)
+[2026-07-04 02:05:59.384 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$path='C:\Users\HP\Documents\Codex\2026-07-03\file
+[2026-07-04 02:05:59.423 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[2026-07-03T18:05:59.441540+00:00] setup refresh: processed 3 write roots (read roots delegated); errors=[]
+[2026-07-04 02:05:59.441 codex-windows-sandbox-setup.exe] setup binary completed
+[2026-07-04 02:05:59.454 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-04 02:05:59.454 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03T18:05:59.458704100+00:00] read-acl-only mode: applying read ACLs
+[2026-07-03T18:05:59.461922600+00:00] read ACL run completed
+[2026-07-04 02:05:59.625 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$path='C:\Users\HP\Documents\Codex\2026-07-03\file
+[2026-07-04 02:09:22.727 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$lines=Get-Content -LiteralPath outputs\index.html
+[2026-07-04 02:09:22.727 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$lines=Get-Content -LiteralPath outputs\index.html
+[2026-07-04 02:09:22.728 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$lines=Get-Content -LiteralPath outputs\index.html
+[2026-07-04 02:09:22.787 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[2026-07-04 02:09:22.788 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[2026-07-04 02:09:22.788 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[2026-07-03T18:09:22.807934100+00:00] setup refresh: processed 3 write roots (read roots delegated); errors=[]
+[[2026-07-03T18:09:22.809250900+00:00] setup refresh: processed 3 write roots (read roots delegated); errors=[]2026-07-03T18:09:22.810673100+00:00
+[2026-07-04 02:09:22.807 codex-windows-sandbox-setup.exe] setup binary completed] 
+setup refresh: processed 3 write roots (read roots delegated); errors=[]
+[2026-07-04 02:09:22.811 codex-windows-sandbox-setup.exe] setup binary completed[2026-07-04 02:09:22.811 codex-windows-sandbox-setup.exe] setup binary completed
+
+[[2026-07-03T18:09:22.826033+00:00] read-acl-only mode: applying read ACLs2026-07-03T18:09:22.826037+00:00
+] read ACL helper already running; skipping
+[2026-07-03T18:09:22.830043400+00:00] read ACL run completed
+[2026-07-04 02:09:22.832 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe[2026-07-04 02:09:22.831 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+
+[2026-07-04 02:09:22.828 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03T18:09:22.832940200+00:00] read-acl-only mode: applying read ACLs
+[2026-07-04 02:09:22.833 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-04 02:09:22.833 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-04 02:09:22.833 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03T18:09:22.836014100+00:00] read ACL run completed
+[2026-07-04 02:09:22.997 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$lines=Get-Content -LiteralPath outputs\index.html
+[2026-07-04 02:09:23.006 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$lines=Get-Content -LiteralPath outputs\index.html
+[2026-07-04 02:09:23.017 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$lines=Get-Content -LiteralPath outputs\index.html
+[2026-07-04 02:10:12.876 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$p='outputs\index.html'; $t=[System.IO.File]::Read
+[2026-07-04 02:10:12.877 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+(Get-Content -LiteralPath outputs\index.html -Enco
+[2026-07-04 02:10:12.927 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[2026-07-04 02:10:12.927 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[2026-07-03T18:10:12.945849400+00:00] setup refresh: processed 3 write roots (read roots delegated); errors=[]
+[2026-07-03T18:10:12.946134200+00:00] setup refresh: processed 3 write roots (read roots delegated); errors=[]
+[2026-07-04 02:10:12.945 codex-windows-sandbox-setup.exe] setup binary completed
+[2026-07-04 02:10:12.946 codex-windows-sandbox-setup.exe] setup binary completed
+[[2026-07-03T18:10:12.967012100+00:00] 2026-07-03T18:10:12.967021500+00:00read-acl-only mode: applying read ACLs] 
+read ACL helper already running; skipping
+[2026-07-04 02:10:12.966 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-04 02:10:12.967 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-04 02:10:12.968 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-04 02:10:12.969 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03T18:10:12.970117600+00:00] read ACL run completed
+[2026-07-04 02:10:13.146 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$p='outputs\index.html'; $t=[System.IO.File]::Read
+[2026-07-04 02:10:13.156 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+(Get-Content -LiteralPath outputs\index.html -Enco
+[2026-07-04 02:10:21.107 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$path='C:\Users\HP\Documents\Codex\2026-07-03\file
+[2026-07-04 02:10:21.150 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[2026-07-03T18:10:21.168436+00:00] setup refresh: processed 3 write roots (read roots delegated); errors=[]
+[2026-07-04 02:10:21.168 codex-windows-sandbox-setup.exe] setup binary completed
+[2026-07-04 02:10:21.180 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-04 02:10:21.181 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03T18:10:21.184556900+00:00] read-acl-only mode: applying read ACLs
+[2026-07-03T18:10:21.187349700+00:00] read ACL run completed
+[2026-07-04 02:10:21.357 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$path='C:\Users\HP\Documents\Codex\2026-07-03\file
+[2026-07-04 06:34:04.879 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$p='outputs\index.html'; $t=[System.IO.File]::Read[2026-07-04 06:34:04.879 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+(Get-Content -LiteralPath outputs\index.html -Enco
+
+[2026-07-04 06:34:04.968 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[2026-07-04 06:34:04.969 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[2026-07-03T22:34:05.008351700+00:00] setup refresh: processed 3 write roots (read roots delegated); errors=[]
+[2026-07-04 06:34:05.008 codex-windows-sandbox-setup.exe] setup binary completed
+[2026-07-03T22:34:05.012056400+00:00] setup refresh: processed 3 write roots (read roots delegated); errors=[]
+[2026-07-04 06:34:05.013 codex-windows-sandbox-setup.exe] setup binary completed
+[2026-07-03T22:34:05.033431400+00:00] read-acl-only mode: applying read ACLs
+[2026-07-03T22:34:05.038447300+00:00] read ACL helper already running; skipping
+[2026-07-04 06:34:05.036 codex.exe] helper copy: validating command-runner source=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-command-runner.exe destination=C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03T22:34:05.038644100+00:00] read ACL run completed
+[2026-07-04 06:34:05.037 codex.exe] helper copy: validating command-runner source=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-command-runner.exe destination=C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-04 06:34:05.039 codex.exe] helper copy: reused command-runner source=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-command-runner.exe destination=C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-04 06:34:05.047 codex.exe] helper copy: reused command-runner source=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-command-runner.exe destination=C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-04 06:34:05.046 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-04 06:34:05.050 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-04 06:34:05.460 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$p='outputs\index.html'; $t=[System.IO.File]::Read
+[2026-07-04 06:34:05.505 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+(Get-Content -LiteralPath outputs\index.html -Enco
+[2026-07-04 06:35:09.419 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+(Get-Content -LiteralPath outputs\index.html -Enco
+[2026-07-04 06:35:09.420 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$p='outputs\index.html'; $t=[System.IO.File]::Read
+[2026-07-04 06:35:09.514 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)[2026-07-04 06:35:09.514 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+
+[2026-07-03T22:35:09.548426400+00:00] setup refresh: processed 3 write roots (read roots delegated); errors=[]
+[2026-07-03T22:35:09.548772300+00:00] setup refresh: processed 3 write roots (read roots delegated); errors=[]
+[2026-07-04 06:35:09.548 codex-windows-sandbox-setup.exe] setup binary completed
+[2026-07-04 06:35:09.548 codex-windows-sandbox-setup.exe] setup binary completed
+[2026-07-03T22:35:09.576886200+00:00] read-acl-only mode: applying read ACLs
+[2026-07-03T22:35:09.576907+00:00] read ACL helper already running; skipping
+[2026-07-03T22:35:09.582291900+00:00] read ACL run completed
+[2026-07-04 06:35:09.581 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-04 06:35:09.582 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-04 06:35:09.588 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-04 06:35:09.588 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-04 06:35:09.959 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$p='outputs\index.html'; $t=[System.IO.File]::Read
+[2026-07-04 06:35:09.994 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+(Get-Content -LiteralPath outputs\index.html -Enco
+[2026-07-04 06:35:18.965 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$path='C:\Users\HP\Documents\Codex\2026-07-03\file
+[2026-07-04 06:35:19.013 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[2026-07-03T22:35:19.035766600+00:00] setup refresh: processed 3 write roots (read roots delegated); errors=[]
+[2026-07-04 06:35:19.035 codex-windows-sandbox-setup.exe] setup binary completed
+[2026-07-04 06:35:19.050 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-04 06:35:19.050 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03T22:35:19.058607800+00:00] read-acl-only mode: applying read ACLs
+[2026-07-03T22:35:19.062194900+00:00] read ACL run completed
+[2026-07-04 06:35:19.395 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$path='C:\Users\HP\Documents\Codex\2026-07-03\file
+[2026-07-04 06:38:37.603 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+(Get-Content -LiteralPath outputs\index.html -Enco
+[2026-07-04 06:38:37.603 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$lines=Get-Content -LiteralPath outputs\index.html
+[2026-07-04 06:38:37.692 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[2026-07-04 06:38:37.695 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[2026-07-03T22:38:37.726061100+00:00] setup refresh: processed 3 write roots (read roots delegated); errors=[]
+[2026-07-03T22:38:37.728646100+00:00] setup refresh: processed 3 write roots (read roots delegated); errors=[]
+[2026-07-04 06:38:37.726 codex-windows-sandbox-setup.exe] setup binary completed
+[2026-07-04 06:38:37.730 codex-windows-sandbox-setup.exe] setup binary completed
+[2026-07-04 06:38:37.752 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-04 06:38:37.755 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe[[
+2026-07-03T22:38:37.758716800+00:002026-07-03T22:38:37.754941200+00:00] read-acl-only mode: applying read ACLs
+] read ACL helper already running; skipping
+[2026-07-03T22:38:37.763668700+00:00] read ACL run completed
+[2026-07-04 06:38:37.755 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-04 06:38:37.759 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-04 06:38:38.066 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$lines=Get-Content -LiteralPath outputs\index.html
+[2026-07-04 06:38:38.129 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+(Get-Content -LiteralPath outputs\index.html -Enco
+[2026-07-04 06:39:53.223 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$p='outputs\index.html'; $t=[System.IO.File]::Read
+[2026-07-04 06:39:53.224 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+(Get-Content -LiteralPath outputs\index.html -Enco
+[2026-07-04 06:39:53.303 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[2026-07-04 06:39:53.309 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[2026-07-03T22:39:53.340387500+00:00] setup refresh: processed 3 write roots (read roots delegated); errors=[]
+[[2026-07-04 06:39:53.340 codex-windows-sandbox-setup.exe] setup binary completed2026-07-03T22:39:53.344060600+00:00
+] setup refresh: processed 3 write roots (read roots delegated); errors=[]
+[2026-07-04 06:39:53.346 codex-windows-sandbox-setup.exe] setup binary completed
+[[2026-07-04 06:39:53.369 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe2026-07-03T22:39:53.369967900+00:00
+] read-acl-only mode: applying read ACLs
+[2026-07-03T22:39:53.369998300+00:00] read ACL helper already running; skipping
+[2026-07-03T22:39:53.374763500+00:00] read ACL run completed
+[2026-07-04 06:39:53.370 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-04 06:39:53.372 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-04 06:39:53.379 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-04 06:39:53.697 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$p='outputs\index.html'; $t=[System.IO.File]::Read
+[2026-07-04 06:39:53.732 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+(Get-Content -LiteralPath outputs\index.html -Enco
+[2026-07-04 06:41:56.633 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+(Get-Content -LiteralPath outputs\index.html -Enco
+[2026-07-04 06:41:56.696 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[2026-07-03T22:41:56.730907600+00:00] setup refresh: processed 3 write roots (read roots delegated); errors=[]
+[2026-07-04 06:41:56.731 codex-windows-sandbox-setup.exe] setup binary completed
+[2026-07-04 06:41:56.750 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03T22:41:56.753414800+00:00] read-acl-only mode: applying read ACLs
+[2026-07-04 06:41:56.753 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03T22:41:56.757450600+00:00] read ACL run completed
+[2026-07-04 06:41:56.849 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$lines=Get-Content -LiteralPath outputs\index.html
+[2026-07-04 06:41:56.913 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[2026-07-03T22:41:56.942568800+00:00] setup refresh: processed 3 write roots (read roots delegated); errors=[]
+[2026-07-04 06:41:56.942 codex-windows-sandbox-setup.exe] setup binary completed
+[2026-07-04 06:41:56.962 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-04 06:41:56.962 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03T22:41:56.971445200+00:00] read-acl-only mode: applying read ACLs
+[2026-07-03T22:41:56.975698600+00:00] read ACL run completed
+[2026-07-04 06:41:57.051 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+(Get-Content -LiteralPath outputs\index.html -Enco
+[2026-07-04 06:41:57.191 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$lines=Get-Content -LiteralPath outputs\index.html
+[2026-07-04 06:42:52.645 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$p='outputs\index.html'; $t=[System.IO.File]::Read
+[2026-07-04 06:42:52.722 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[2026-07-03T22:42:52.746524700+00:00] setup refresh: processed 3 write roots (read roots delegated); errors=[]
+[2026-07-04 06:42:52.746 codex-windows-sandbox-setup.exe] setup binary completed
+[2026-07-04 06:42:52.761 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-04 06:42:52.761 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03T22:42:52.768322200+00:00] read-acl-only mode: applying read ACLs
+[2026-07-03T22:42:52.771985600+00:00] read ACL run completed
+[2026-07-04 06:42:53.044 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$p='outputs\index.html'; $t=[System.IO.File]::Read
+[2026-07-04 06:42:53.348 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+(Get-Content -LiteralPath outputs\index.html -Enco
+[2026-07-04 06:42:53.399 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[2026-07-03T22:42:53.422091400+00:00] setup refresh: processed 3 write roots (read roots delegated); errors=[]
+[2026-07-04 06:42:53.422 codex-windows-sandbox-setup.exe] setup binary completed
+[2026-07-04 06:42:53.437 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-04 06:42:53.437 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03T22:42:53.439173+00:00] read-acl-only mode: applying read ACLs
+[2026-07-03T22:42:53.442050900+00:00] read ACL run completed
+[2026-07-04 06:42:53.761 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+(Get-Content -LiteralPath outputs\index.html -Enco
+[2026-07-04 06:43:02.404 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$path='C:\Users\HP\Documents\Codex\2026-07-03\file
+[2026-07-04 06:43:02.453 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[2026-07-03T22:43:02.476732+00:00] setup refresh: processed 3 write roots (read roots delegated); errors=[]
+[2026-07-04 06:43:02.476 codex-windows-sandbox-setup.exe] setup binary completed
+[2026-07-03T22:43:02.496993500+00:00] read-acl-only mode: applying read ACLs
+[2026-07-04 06:43:02.497 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-04 06:43:02.498 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03T22:43:02.500863400+00:00] read ACL run completed
+[2026-07-04 06:43:02.739 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$path='C:\Users\HP\Documents\Codex\2026-07-03\file
+[2026-07-04 06:44:41.580 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+(Get-Content -LiteralPath outputs\index.html -Enco
+[2026-07-04 06:44:41.581 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$p='outputs\index.html'; $t=[System.IO.File]::Read
+[2026-07-04 06:44:41.678 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[2026-07-04 06:44:41.676 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[2026-07-03T22:44:41.717863700+00:00] setup refresh: processed 3 write roots (read roots delegated); errors=[]
+[2026-07-04 06:44:41.717 codex-windows-sandbox-setup.exe] setup binary completed
+[2026-07-03T22:44:41.726420700+00:00] setup refresh: processed 3 write roots (read roots delegated); errors=[]
+[2026-07-04 06:44:41.726 codex-windows-sandbox-setup.exe] setup binary completed
+[[2026-07-04 06:44:41.747 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe2026-07-03T22:44:41.753012800+00:00
+] read-acl-only mode: applying read ACLs
+[2026-07-04 06:44:41.753 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03T22:44:41.758124700+00:00] read ACL run completed
+[2026-07-04 06:44:41.756 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03T22:44:41.765231400+00:00] read-acl-only mode: applying read ACLs
+[2026-07-04 06:44:41.765 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03T22:44:41.770908+00:00] read ACL run completed
+[2026-07-04 06:44:42.095 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$p='outputs\index.html'; $t=[System.IO.File]::Read
+[2026-07-04 06:44:42.118 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+(Get-Content -LiteralPath outputs\index.html -Enco
+[2026-07-04 06:44:53.999 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$path='C:\Users\HP\Documents\Codex\2026-07-03\file
+[2026-07-04 06:44:54.046 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[2026-07-03T22:44:54.070236500+00:00] setup refresh: processed 3 write roots (read roots delegated); errors=[]
+[2026-07-04 06:44:54.070 codex-windows-sandbox-setup.exe] setup binary completed
+[2026-07-04 06:44:54.087 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03T22:44:54.094525200+00:00] read-acl-only mode: applying read ACLs
+[2026-07-04 06:44:54.091 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03T22:44:54.098960+00:00] read ACL run completed
+[2026-07-04 06:44:54.396 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$path='C:\Users\HP\Documents\Codex\2026-07-03\file
+[2026-07-04 07:16:37.072 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$src='C:\Users\HP\Documents\Codex\2026-07-03\files
+[2026-07-04 07:16:37.136 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[2026-07-03T23:16:37.166252100+00:00] setup refresh: processed 3 write roots (read roots delegated); errors=[]
+[2026-07-04 07:16:37.166 codex-windows-sandbox-setup.exe] setup binary completed
+[2026-07-03T23:16:37.188901100+00:00] read-acl-only mode: applying read ACLs
+[2026-07-04 07:16:37.186 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-04 07:16:37.189 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03T23:16:37.192725200+00:00] read ACL run completed
+[2026-07-04 07:16:37.491 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$src='C:\Users\HP\Documents\Codex\2026-07-03\files
+[2026-07-04 07:38:11.439 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$src='C:\Users\HP\Documents\Codex\2026-07-03\files
+[2026-07-04 07:38:11.506 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[2026-07-03T23:38:11.538902100+00:00] setup refresh: processed 3 write roots (read roots delegated); errors=[]
+[2026-07-04 07:38:11.538 codex-windows-sandbox-setup.exe] setup binary completed
+[2026-07-04 07:38:11.557 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe[
+2026-07-03T23:38:11.558534800+00:00] read-acl-only mode: applying read ACLs
+[2026-07-04 07:38:11.558 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03T23:38:11.562600300+00:00] read ACL run completed
+[2026-07-04 07:38:11.919 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$src='C:\Users\HP\Documents\Codex\2026-07-03\files
+[2026-07-04 07:38:23.327 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+Get-ChildItem -LiteralPath outputs -Force | Select
+[2026-07-04 07:38:23.327 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+Get-ChildItem -LiteralPath . -Recurse -File | Sele
+[2026-07-04 07:38:23.395 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[2026-07-04 07:38:23.400 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[2026-07-03T23:38:23.424053800+00:00] setup refresh: processed 3 write roots (read roots delegated); errors=[]
+[2026-07-04 07:38:23.424 codex-windows-sandbox-setup.exe] setup binary completed
+[2026-07-03T23:38:23.430171700+00:00] setup refresh: processed 3 write roots (read roots delegated); errors=[]
+[2026-07-04 07:38:23.430 codex-windows-sandbox-setup.exe] setup binary completed
+[2026-07-04 07:38:23.443 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03T23:38:23.453522400+00:00] read-acl-only mode: applying read ACLs
+[2026-07-03T23:38:23.456500700+00:00] read ACL run completed
+[2026-07-04 07:38:23.452 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe[
+2026-07-03T23:38:23.460351+00:00] read-acl-only mode: applying read ACLs
+[2026-07-04 07:38:23.460 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-04 07:38:23.453 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03T23:38:23.463417600+00:00] read ACL run completed
+[2026-07-04 07:38:23.738 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+Get-ChildItem -LiteralPath outputs -Force | Select
+[2026-07-04 07:38:23.738 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+Get-ChildItem -LiteralPath . -Recurse -File | Sele
+[2026-07-04 07:38:33.874 codex.exe] START: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$src='C:\Users\HP\Documents\Codex\2026-07-03\files
+[2026-07-04 07:38:33.988 codex.exe] setup refresh: spawning C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app\resources\codex-windows-sandbox-setup.exe (cwd=C:\Program Files\WindowsApps\OpenAI.Codex_26.611.8273.0_x64__2p2nqsd0c76g0\app, payload_len=3068)
+[2026-07-03T23:38:34.013246600+00:00] setup refresh: processed 3 write roots (read roots delegated); errors=[]
+[2026-07-04 07:38:34.013 codex-windows-sandbox-setup.exe] setup binary completed
+[2026-07-04 07:38:34.037 codex.exe] helper copy: using in-memory cache for command-runner -> C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-04 07:38:34.038 codex.exe] helper launch resolution: using copied command-runner path C:\Users\HP\.codex\.sandbox-bin\codex-command-runner-0.140.0-alpha.19.exe
+[2026-07-03T23:38:34.061629400+00:00] read-acl-only mode: applying read ACLs
+[2026-07-03T23:38:34.102665600+00:00] read ACL run completed
+[2026-07-04 07:38:34.410 codex.exe] SUCCESS: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+$src='C:\Users\HP\Documents\Codex\2026-07-03\files
