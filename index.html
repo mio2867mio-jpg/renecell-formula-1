@@ -350,6 +350,12 @@ function triggerDownload(blob, filename){
   setTimeout(()=>URL.revokeObjectURL(url),1000);
 }
 
+function openLineFallback(){
+  const text=encodeURIComponent('RENE CELL 保養配置圖已下載。請回到 LINE 聊天室，選擇剛下載的圖片傳送。');
+  const lineUrl=`https://line.me/R/msg/text/?${text}`;
+  setTimeout(()=>{window.location.href=lineUrl},350);
+}
+
 async function handleAction(type){
   const btn=document.getElementById(type==='download'?'downloadBtn':'shareBtn');
   const original=btn?btn.textContent:'';
@@ -372,7 +378,7 @@ async function handleAction(type){
 
     if(navigator.canShare&&navigator.canShare({files:[file]})){
       try{
-        await navigator.share({files:[file],title:'RENE CELL 保養配置圖'});
+        await navigator.share({files:[file],title:'RENE CELL 保養配置圖',text:'RENE CELL 保養配置圖'});
         return;
       }catch(shareErr){
         if(shareErr&&shareErr.name==='AbortError')return;
@@ -380,7 +386,8 @@ async function handleAction(type){
     }
 
     triggerDownload(blob,filename);
-    alert('此裝置無法直接分享到 LINE，已改為下載圖片。請從 LINE 聊天室傳送圖片；若要最清楚，可用「檔案」方式傳送。');
+    alert('此瀏覽器無法直接把圖片交給 LINE，已先下載圖片。按下確定後會開啟 LINE，請在聊天室選擇剛下載的圖片傳送。');
+    openLineFallback();
   }catch(e){
     console.error(e);
     alert('圖片產生失敗，請確認網路環境或重新整理後再試。');
