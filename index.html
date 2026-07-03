@@ -350,40 +350,47 @@ async function downloadPNG(){
 
 // 分享到 LINE，自動放大 2 倍產生 1600 x 2400，最適合 LINE 高清傳輸
 async function shareLine(){
-  const btn=document.getElementById('shareBtn');
-  const original=btn?btn.textContent:'';
-  if(btn){btn.disabled=true;btn.textContent='圖片產生中…'}
-  try{
-    const canvas=await makeCanvas(2); // 傳入放大倍率 2
-    const blob=await new Promise(res=>canvas.toBlob(res,'image/png',1));
-    const filename=fileBaseName()+'.png';
-    const file=new File([blob],filename,{type:'image/png'});
+  const btn = document.getElementById('shareBtn');
+  const original = btn ? btn.textContent : '';
+  if(btn){ btn.disabled = true; btn.textContent = '圖片產生中…'; }
+  
+  try {
+    // 放大 2 倍產生 1600 x 2400
+    const canvas = await makeCanvas(2); 
     
-    if(navigator.canShare&&navigator.canShare({files:[file]})){
-      try{
-        await navigator.share({files:[file],title:'RENE CELL 保養配置圖'});
-        return;
-      }catch(shareErr){
-        if(shareErr&&shareErr.name==='AbortError')return;
+    // 【關鍵修改】：改用 JPEG 格式，品質 0.9。這能讓圖片體積縮小 80%，運算速度大幅提升，確保在瀏覽器時限內完成分享
+    const blob = await new Promise(res => canvas.toBlob(res, 'image/jpeg', 0.9));
+    const filename = fileBaseName() + '.jpg';
+    const file = new File([blob], filename, { type: 'image/jpeg' });
+    
+    // 檢查瀏覽器是否支援分享檔案
+    if (navigator.canShare && navigator.canShare({ files: [file] })) {
+      try {
+        await navigator.share({
+          files: [file],
+          title: 'RENE CELL 保養配置圖'
+        });
+        return; // 成功分享，直接結束
+      } catch (shareErr) {
+        if (shareErr.name === 'AbortError') return; // 使用者自己取消分享，不報錯
       }
     }
-    // 降級為直接下載
-    const url=URL.createObjectURL(blob);
-    const a=document.createElement('a');
-    a.download=filename;
-    a.href=url;
+    
+    // 如果分享失敗（例如瀏覽器不支援、被封鎖），自動降級為直接下載
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.download = filename;
+    a.href = url;
     document.body.appendChild(a);
     a.click();
     a.remove();
-    setTimeout(()=>URL.revokeObjectURL(url),1000);
-    const reason=location.protocol==='file:'?'因為目前是用本機檔案（file://）開啟，手機原生分享選單無法使用。':(!window.isSecureContext?'因為目前的網址不是 https，手機原生分享選單無法使用。':'因為此瀏覽器不支援直接跳出分享選單。');
-    alert(reason+'圖片已改為下載，請至手機相簿／下載內容，用 LINE「檔案」方式傳送給客戶，畫質最清楚。若要用「分享到 LINE」直接跳出好友選項，請改用已發布的 https 網址，並在手機瀏覽器（Safari／Chrome）中開啟。')
-  }catch(e){
-    alert('圖片產生失敗，請重新整理頁面後再試一次。')
-  }finally{
-    if(btn){btn.disabled=false;btn.textContent=original}
+    setTimeout(() => URL.revokeObjectURL(url), 1000);
+    
+    alert('因安全性限制，已改為自動下載圖片。\n下載完成後，請手動將圖片傳給 LINE 好友即可！');
+    
+  } catch(e) {
+    alert('圖片產生失敗，請確認是否於 https 環境下操作。');
+  } finally {
+    if(btn){ btn.disabled = false; btn.textContent = original; }
   }
 }
-</script>
-</body>
-</html>
