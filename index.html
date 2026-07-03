@@ -325,26 +325,27 @@ async function makeCanvas(targetScale){
   return canvas;
 }
 
-// 點擊下載 PNG，自動放大 3 倍產生 2400 x 3600
-async function downloadPNG(){
-  const btn=document.getElementById('downloadBtn');
-  const original=btn?btn.textContent:'';
-  if(btn){btn.disabled=true;btn.textContent='圖片產生中…'}
+// 修改這一段：讓「下載」功能也使用 JPEG，速度更快，不佔手機空間
+async function downloadPNG() {
+  const btn = document.getElementById('downloadBtn'); // 請確認您的 HTML 按鈕 ID 是否為 downloadBtn
+  const original = btn ? btn.textContent : '';
+  if (btn) { btn.disabled = true; btn.textContent = '產生中...'; }
+  
   try {
-    const canvas=await makeCanvas(3); // 傳入放大倍率 3
-    const blob=await new Promise(res=>canvas.toBlob(res,'image/png',1));
-    const url=URL.createObjectURL(blob);
-    const a=document.createElement('a');
-    a.download=fileBaseName()+'.png';
-    a.href=url;
+    const canvas = await makeCanvas(2); // 保持與分享功能一致的解析度
+    const blob = await new Promise(res => canvas.toBlob(res, 'image/jpeg', 0.9));
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.download = fileBaseName() + '.jpg'; // 檔名改為 .jpg
+    a.href = url;
     document.body.appendChild(a);
     a.click();
     a.remove();
-    setTimeout(()=>URL.revokeObjectURL(url),1000);
+    setTimeout(() => URL.revokeObjectURL(url), 1000);
   } catch (e) {
-    alert('圖片產生失敗，請重新整理頁面後再試一次。');
+    alert('下載失敗，請稍後再試。');
   } finally {
-    if(btn){btn.disabled=false;btn.textContent=original}
+    if (btn) { btn.disabled = false; btn.textContent = original; }
   }
 }
 
