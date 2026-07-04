@@ -423,20 +423,54 @@ function triggerDownload(blob, filename){
   setTimeout(()=>URL.revokeObjectURL(url),1000);
 }
 
-/* 在使用者點擊當下「同步」開啟一個空白分頁，藉此保留瀏覽器認定的使用者手勢。
-   之後不論 html2canvas 花多久時間，都能在稍後直接改寫這個分頁的內容，
-   iOS Safari 才不會因為非同步等待而擋下下載動作。*/
-function openPendingTab(){
-  try{
-    const w=window.open('', '_blank');
-    if(w && w.document){
-      w.document.write('<!DOCTYPE html><html><head><meta charset="utf-8"><title>圖片產生中…</title></head><body style="margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;font-family:-apple-system,BlinkMacSystemFont,\'PingFang TC\',sans-serif;color:#4f3b31;background:#f7f2ea"><div>圖片產生中，請稍候…</div></body></html>');
-    }
-    return w||null;
-  }catch(e){ return null }
+function blobToDataURL(blob){
+  return new Promise((resolve,reject)=>{
+    const reader=new FileReader();
+    reader.onload=()=>resolve(reader.result);
+    reader.onerror=reject;
+    reader.readAsDataURL(blob);
+  });
 }
 
-const LINE_TIP='\n\n💡 小提醒：LINE 傳送「相片」會自動壓縮畫質。若要保留最清晰的畫質，請在 LINE 聊天室點選「＋」→「檔案」，選擇剛才儲存的圖片以「檔案」方式傳送，即可避免被壓縮。';
+async function showIOSImagePanel(blob, filename){
+  const dataURL=await blobToDataURL(blob);
+  document.getElementById('iosSavePanel')?.remove();
+
+  const panel=document.createElement('div');
+  panel.id='iosSavePanel';
+  panel.style.cssText='position:fixed;inset:0;z-index:99999;background:#f7f2ea;overflow:auto;-webkit-overflow-scrolling:touch;padding:18px;font-family:-apple-system,BlinkMacSystemFont,"PingFang TC",sans-serif;color:#352822;';
+
+  panel.innerHTML=`<div style="max-width:880px;margin:0 auto 24px;text-align:center;">
+    <div style="display:flex;gap:10px;justify-content:flex-end;margin-bottom:12px;position:sticky;top:0;background:#f7f2ea;padding:8px 0;">
+      <button type="button" id="iosShareImage" style="border:0;border-radius:999px;background:#4f3b31;color:white;font-weight:900;padding:11px 18px;">分享</button>
+      <button type="button" id="iosCloseImage" style="border:0;border-radius:999px;background:white;color:#4f3b31;font-weight:900;padding:11px 18px;">關閉</button>
+    </div>
+    <div style="font-weight:900;font-size:18px;margin:8px 0 6px;">圖片已產生</div>
+    <div style="font-size:14px;line-height:1.7;color:#6d574a;margin-bottom:14px;">請長按下方圖片，選擇「儲存到照片」或「儲存到檔案」。若在 LINE 裡卡住，請用右下角「⋯」改用 Safari 開啟。</div>
+    <img src="${dataURL}" alt="${filename}" style="display:block;width:100%;height:auto;border-radius:18px;box-shadow:0 12px 34px rgba(65,45,31,.18);background:white;">
+  </div>`;
+
+  document.body.appendChild(panel);
+  document.body.style.overflow='hidden';
+
+  document.getElementById('iosCloseImage').onclick=()=>{
+    panel.remove();
+    document.body.style.overflow='';
+  };
+
+  document.getElementById('iosShareImage').onclick=async()=>{
+    const file=new File([blob],filename,{type:blob.type});
+    if(navigator.canShare&&navigator.canShare({files:[file]})){
+      try{
+        await navigator.share({files:[file],title:'RENE CELL 保養配置圖'});
+      }catch(_){}
+    }else{
+      alert('此瀏覽器無法直接分享，請長按圖片儲存後再傳送。');
+    }
+  };
+}
+
+const LINE_TIP='\n\n小提醒：LINE 傳送「相片」會自動壓縮畫質。若要保留最清晰的畫質，請在 LINE 聊天室點選「＋」→「檔案」，選擇剛才儲存的圖片以「檔案」方式傳送，即可避免被壓縮。';
 
 async function handleAction(type){
   const btn=document.getElementById(type==='download'?'downloadBtn':'shareBtn');
@@ -444,33 +478,31 @@ async function handleAction(type){
   if(btn){btn.disabled=true;btn.textContent='處理中…'}
 
   const ios=isIOS();
-  // 僅「下載圖片」在 iOS 上需要用分頁繞過限制；分享會優先走原生分享面板
-  let pendingTab = (ios && type==='download') ? openPendingTab() : null;
 
   try{
     if(type==='download'){
-      const canvas=await makeCanvas(6);
-      if(!canvas){ if(pendingTab && !pendingTab.closed) pendingTab.close(); return }
-      const blob=await new Promise(res=>canvas.toBlob(res,'image/png',1));
-      const filename=fileBaseName()+'-高清.png';
+      const canvas=await makeCanvas(ios?3:6);
+      if(!canvas)return;
 
-      if(pendingTab && !pendingTab.closed){
-        const url=URL.createObjectURL(blob);
-        pendingTab.location.href=url;
-        alert('圖片已在新分頁開啟，請長按圖片選擇「儲存至檔案」（建議）或「加入照片」。'+LINE_TIP);
+      const blob=await new Promise(res=>canvas.toBlob(res,ios?'image/jpeg':'image/png',ios?0.96:1));
+      const filename=fileBaseName()+(ios?'-iPhone儲存.jpg':'-高清.png');
+
+      if(ios){
+        await showIOSImagePanel(blob,filename);
         return;
       }
-      // 分頁被瀏覽器封鎖時的備援：一般下載方式
+
       triggerDownload(blob,filename);
       alert('圖片已下載完成。'+LINE_TIP);
       return;
     }
 
-    const canvas=await makeCanvas(6);
+    const canvas=await makeCanvas(ios?3:6);
     if(!canvas)return;
-    const blob=await new Promise(res=>canvas.toBlob(res,'image/png',1));
-    const filename=fileBaseName()+'-LINE高清.png';
-    const file=new File([blob],filename,{type:'image/png'});
+
+    const blob=await new Promise(res=>canvas.toBlob(res,ios?'image/jpeg':'image/png',ios?0.96:1));
+    const filename=fileBaseName()+(ios?'-LINE高畫質.jpg':'-LINE高清.png');
+    const file=new File([blob],filename,{type:blob.type});
 
     if(navigator.canShare&&navigator.canShare({files:[file]})){
       try{
@@ -482,21 +514,15 @@ async function handleAction(type){
     }
 
     if(ios){
-      const tab=openPendingTab();
-      if(tab && !tab.closed){
-        const url=URL.createObjectURL(blob);
-        tab.location.href=url;
-        alert('此裝置無法直接開啟分享面板，圖片已在新分頁開啟，請長按圖片選擇「儲存至檔案」。'+LINE_TIP);
-        return;
-      }
+      await showIOSImagePanel(blob,filename);
+      return;
     }
 
     triggerDownload(blob,filename);
     alert('此裝置無法直接分享到 LINE，已改為下載高清 PNG。'+LINE_TIP);
   }catch(e){
     console.error(e);
-    if(pendingTab && !pendingTab.closed){ try{pendingTab.close()}catch(_){} }
-    alert('圖片產生失敗，請確認網路環境充足後再試一次。若您是從 LINE 內建的瀏覽器開啟這個頁面，請改用 Safari 開啟後再試（右下角「⋯」或分享圖示中選擇「用瀏覽器開啟」）。');
+    alert('圖片產生失敗，請確認網路環境充足後再試一次。若您是從 LINE 內建的瀏覽器開啟這個頁面，請改用 Safari 開啟後再試。');
   }finally{
     if(btn){btn.disabled=false;btn.textContent=original}
   }
