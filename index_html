@@ -190,21 +190,31 @@ button{cursor:pointer;border:0;outline:none}
 /* 【請在此處修改您的團隊登入密碼】 */
 const PASSWORD='K24519811'; 
 
-const catOrder=['清潔','化妝水 / 精華','面霜 / 防護','面膜'];
+const catOrder=['清潔','精華液','霜類','乳液','特殊護理'];
 const skinOptions=['敏感','乾燥','出油','粉刺','痘痘','暗沉','斑點','毛孔','術後修護','泛紅'];
 const products=[
 {id:'cleanser',cat:'清潔',name:'酵素潔顏粉',img:'cleanser.png',defaultTimes:['am','pm'],amountType:'適量',amountQty:'',method:'泡沫清潔',foam:'手起泡'},
 {id:'exfoliate',cat:'清潔',name:'去角質面霜',img:'exfoliate.png',defaultTimes:['pm'],amountType:'適量',amountQty:'',method:'塗抹',foam:'手起泡'},
-{id:'toner',cat:'化妝水 / 精華',name:'多肽化妝水',img:'toner.png',defaultTimes:['am','pm'],amountType:'滴',amountQty:'3',method:'塗抹',foam:'手起泡'},
-{id:'hiq_pre',cat:'化妝水 / 精華',name:'Hi-Q前導精華',img:'hiq_pre.png',defaultTimes:['am','pm'],amountType:'cm',amountQty:'1',method:'塗抹',foam:'手起泡'},
-{id:'ha',cat:'化妝水 / 精華',name:'玻尿酸補水精華',img:'ha.png',defaultTimes:['am','pm'],amountType:'滴',amountQty:'3',method:'塗抹',foam:'手起泡'},
-{id:'regen',cat:'化妝水 / 精華',name:'再生修復精華',img:'regen.png',defaultTimes:['am','pm'],amountType:'cm',amountQty:'1',method:'塗抹',foam:'手起泡'},
-{id:'hiq_cream',cat:'面霜 / 防護',name:'Hi-Q奢華面霜',img:'hiq_cream.png',defaultTimes:['am','pm'],amountType:'cm',amountQty:'1',method:'塗抹',foam:'手起泡'},
-{id:'repair_cream',cat:'面霜 / 防護',name:'保濕修護霜',img:'repair_cream.png',defaultTimes:['am','pm'],amountType:'cm',amountQty:'1',method:'塗抹',foam:'手起泡'},
-{id:'diamond_cb',cat:'面霜 / 防護',name:'鑽石CB修護霜',img:'diamond_cb.png',defaultTimes:['am','pm'],amountType:'cm',amountQty:'1',method:'塗抹',foam:'手起泡'},
-{id:'bb',cat:'面霜 / 防護',name:'BB隔離霜',img:'bb.png',defaultTimes:['am'],amountType:'cm',amountQty:'1',method:'塗抹',foam:'手起泡'},
-{id:'sunscreen',cat:'面霜 / 防護',name:'SPF 50防曬霜',img:'sunscreen.png',defaultTimes:['am'],amountType:'cm',amountQty:'2',method:'塗抹',foam:'手起泡'},
-{id:'mask_nutrition',cat:'面膜',name:'營養保濕面膜',img:'mask_nutrition.png',defaultTimes:['pm'],amountType:'適量',amountQty:'',method:'厚敷',foam:'手起泡'}
+{id:'toner',cat:'精華液',name:'多肽化妝水',img:'toner.png',defaultTimes:['am','pm'],amountType:'滴',amountQty:'3',method:'塗抹',foam:'手起泡'},
+{id:'hiq_pre',cat:'精華液',name:'Hi-Q前導精華',img:'hiq_pre.png',defaultTimes:['am','pm'],amountType:'cm',amountQty:'1',method:'塗抹',foam:'手起泡'},
+{id:'ha',cat:'精華液',name:'玻尿酸補水精華',img:'ha.png',defaultTimes:['am','pm'],amountType:'滴',amountQty:'3',method:'塗抹',foam:'手起泡'},
+{id:'vitc',cat:'精華液',name:'維生素C精華',img:'vitc.png',defaultTimes:['am'],amountType:'滴',amountQty:'3',method:'塗抹',foam:'手起泡'},
+{id:'regen',cat:'精華液',name:'再生修復精華',img:'regen.png',defaultTimes:['am','pm'],amountType:'cm',amountQty:'1',method:'塗抹',foam:'手起泡'},
+{id:'ampoule',cat:'精華液',name:'緊緻安瓶',img:'ampoule.png',defaultTimes:['pm'],amountType:'滴',amountQty:'3',method:'塗抹',foam:'手起泡'},
+{id:'peptide_cream',cat:'霜類',name:'多肽霜',img:'peptide_cream.png',defaultTimes:['pm'],amountType:'cm',amountQty:'1',method:'塗抹',foam:'手起泡'},
+{id:'hiq_cream',cat:'霜類',name:'Hi-Q奢華面霜',img:'hiq_cream.png',defaultTimes:['am','pm'],amountType:'cm',amountQty:'1',method:'塗抹',foam:'手起泡'},
+{id:'repair_cream',cat:'霜類',name:'保濕修護霜',img:'repair_cream.png',defaultTimes:['am','pm'],amountType:'cm',amountQty:'1',method:'塗抹',foam:'手起泡'},
+{id:'diamond_cb',cat:'霜類',name:'鑽石CB修護霜',img:'diamond_cb.png',defaultTimes:['am','pm'],amountType:'cm',amountQty:'1',method:'塗抹',foam:'手起泡'},
+{id:'bb',cat:'霜類',name:'BB隔離霜',img:'bb.png',defaultTimes:['am'],amountType:'cm',amountQty:'1',method:'塗抹',foam:'手起泡'},
+{id:'sunscreen',cat:'霜類',name:'SPF 50防曬霜',img:'sunscreen.png',defaultTimes:['am'],amountType:'cm',amountQty:'2',method:'塗抹',foam:'手起泡'},
+{id:'spot_cream',cat:'霜類',name:'美白淡斑霜',img:'spot_cream.png',defaultTimes:['pm'],amountType:'cm',amountQty:'1',method:'塗抹',foam:'手起泡'},
+{id:'antisens',cat:'乳液',name:'抗敏乳',img:'antisens.png',defaultTimes:['am','pm'],amountType:'適量',amountQty:'',method:'塗抹',foam:'手起泡'},
+{id:'mask_119',cat:'特殊護理',name:'119面膜',img:'mask_119.png',defaultTimes:['pm'],amountType:'適量',amountQty:'',method:'厚敷',foam:'手起泡'},
+{id:'mask_nutrition',cat:'特殊護理',name:'營養保濕面膜',img:'mask_nutrition.png',defaultTimes:['pm'],amountType:'適量',amountQty:'',method:'厚敷',foam:'手起泡'},
+{id:'coconut_mask',cat:'特殊護理',name:'椰子面膜',img:'coconut_mask.png',defaultTimes:['pm'],amountType:'適量',amountQty:'',method:'厚敷',foam:'手起泡'},
+{id:'bluelight_spray',cat:'特殊護理',name:'抗藍光防護噴霧',img:'bluelight_spray.png',defaultTimes:['am'],amountType:'適量',amountQty:'',method:'噴霧',foam:'手起泡'},
+{id:'cpr_set',cat:'特殊護理',name:'CPR三階段保養套組',img:'cpr_set.png',defaultTimes:['pm'],amountType:'適量',amountQty:'',method:'塗抹',foam:'手起泡'},
+{id:'whitening_2wk',cat:'特殊護理',name:'2週集中淡斑管理',img:'whitening_2wk.png',defaultTimes:['pm'],amountType:'適量',amountQty:'',method:'塗抹',foam:'手起泡'}
 ];
 const state={cfg:{}, order:{am:[],pm:[]}};
 products.forEach(p=>state.cfg[p.id]={...p,selected:false,am:false,pm:false});
@@ -413,60 +423,20 @@ function triggerDownload(blob, filename){
   setTimeout(()=>URL.revokeObjectURL(url),1000);
 }
 
-function blobToDataURL(blob){
-  return new Promise((resolve,reject)=>{
-    const reader=new FileReader();
-    reader.onload=()=>resolve(reader.result);
-    reader.onerror=reject;
-    reader.readAsDataURL(blob);
-  });
-}
-
-async function showIOSImagePanel(blob, filename, mode='save'){
-  const dataURL=await blobToDataURL(blob);
-  document.getElementById('iosSavePanel')?.remove();
-  const panel=document.createElement('div');
-  panel.id='iosSavePanel';
-  panel.style.cssText='position:fixed;inset:0;z-index:99999;background:#f7f2ea;overflow:auto;-webkit-overflow-scrolling:touch;padding:18px;font-family:-apple-system,BlinkMacSystemFont,\"PingFang TC\",sans-serif;color:#352822;';
-  const title=mode==='share'?'圖片已產生，可分享至 LINE':'圖片已產生，請儲存';
-  const tip=mode==='share'
-    ? '請按上方「分享至 LINE」。若沒有跳出分享面板，再長按下方圖片選擇「儲存到照片」，回 LINE 傳送圖片。'
-    : '請長按下方圖片，選擇「儲存到照片」。這個畫面已經是產生好的圖片，關閉前請先完成儲存。';
-  panel.innerHTML=`<div style="max-width:880px;margin:0 auto 24px;text-align:center;">
-    <div style="display:flex;gap:10px;justify-content:flex-end;margin-bottom:12px;position:sticky;top:0;background:#f7f2ea;padding:8px 0;">
-      <button type="button" id="iosShareImage" style="border:0;border-radius:999px;background:#4f3b31;color:white;font-weight:900;padding:11px 18px;">分享至 LINE</button>
-      <button type="button" id="iosCloseImage" style="border:0;border-radius:999px;background:white;color:#4f3b31;font-weight:900;padding:11px 18px;">關閉</button>
-    </div>
-    <div style="font-weight:900;font-size:18px;margin:8px 0 6px;">${title}</div>
-    <div style="font-size:14px;line-height:1.7;color:#6d574a;margin-bottom:14px;">${tip}</div>
-    <img src="${dataURL}" alt="${filename}" style="display:block;width:100%;height:auto;border-radius:18px;box-shadow:0 12px 34px rgba(65,45,31,.18);background:white;">
-  </div>`;
-  document.body.appendChild(panel);
-  document.body.style.overflow='hidden';
-  document.getElementById('iosCloseImage').onclick=()=>{
-    if(mode==='save') alert('如果還沒儲存，請先長按圖片選擇「儲存到照片」。');
-    panel.remove();
-    document.body.style.overflow='';
-  };
-  document.getElementById('iosShareImage').onclick=async()=>{
-    if(!(await shareImageFile(blob,filename))){
-      alert('此瀏覽器無法直接分享，請長按圖片儲存後再傳送。');
-    }
-  };
-}
-
-async function shareImageFile(blob, filename){
-  const file=new File([blob],filename,{type:blob.type});
-  if(!(navigator.canShare&&navigator.canShare({files:[file]}))) return false;
+/* 在使用者點擊當下「同步」開啟一個空白分頁，藉此保留瀏覽器認定的使用者手勢。
+   之後不論 html2canvas 花多久時間，都能在稍後直接改寫這個分頁的內容，
+   iOS Safari 才不會因為非同步等待而擋下下載動作。*/
+function openPendingTab(){
   try{
-    await navigator.share({files:[file],title:'RENE CELL 保養配置圖'});
-    return true;
-  }catch(shareErr){
-    return shareErr&&shareErr.name==='AbortError';
-  }
+    const w=window.open('', '_blank');
+    if(w && w.document){
+      w.document.write('<!DOCTYPE html><html><head><meta charset="utf-8"><title>圖片產生中…</title></head><body style="margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;font-family:-apple-system,BlinkMacSystemFont,\'PingFang TC\',sans-serif;color:#4f3b31;background:#f7f2ea"><div>圖片產生中，請稍候…</div></body></html>');
+    }
+    return w||null;
+  }catch(e){ return null }
 }
 
-const LINE_TIP='\n\n小提醒：LINE 傳送「相片」仍可能壓縮畫質。若要最清楚，請先存照片或檔案，再到 LINE 傳送。';
+const LINE_TIP='\n\n💡 小提醒：LINE 傳送「相片」會自動壓縮畫質。若要保留最清晰的畫質，請在 LINE 聊天室點選「＋」→「檔案」，選擇剛才儲存的圖片以「檔案」方式傳送，即可避免被壓縮。';
 
 async function handleAction(type){
   const btn=document.getElementById(type==='download'?'downloadBtn':'shareBtn');
@@ -474,40 +444,58 @@ async function handleAction(type){
   if(btn){btn.disabled=true;btn.textContent='處理中…'}
 
   const ios=isIOS();
+  // 僅「下載圖片」在 iOS 上需要用分頁繞過限制；分享會優先走原生分享面板
+  let pendingTab = (ios && type==='download') ? openPendingTab() : null;
 
   try{
     if(type==='download'){
-      const canvas=await makeCanvas(ios?3:6);
-      if(!canvas)return;
-      const blob=await new Promise(res=>canvas.toBlob(res,ios?'image/jpeg':'image/png',ios?0.96:1));
-      const filename=fileBaseName()+(ios?'-iPhone儲存.jpg':'-高清.png');
+      const canvas=await makeCanvas(6);
+      if(!canvas){ if(pendingTab && !pendingTab.closed) pendingTab.close(); return }
+      const blob=await new Promise(res=>canvas.toBlob(res,'image/png',1));
+      const filename=fileBaseName()+'-高清.png';
 
-      if(ios){
-        await showIOSImagePanel(blob,filename,'save');
+      if(pendingTab && !pendingTab.closed){
+        const url=URL.createObjectURL(blob);
+        pendingTab.location.href=url;
+        alert('圖片已在新分頁開啟，請長按圖片選擇「儲存至檔案」（建議）或「加入照片」。'+LINE_TIP);
         return;
       }
-
+      // 分頁被瀏覽器封鎖時的備援：一般下載方式
       triggerDownload(blob,filename);
       alert('圖片已下載完成。'+LINE_TIP);
       return;
     }
 
-    const canvas=await makeCanvas(ios?3:6);
+    const canvas=await makeCanvas(6);
     if(!canvas)return;
-    const blob=await new Promise(res=>canvas.toBlob(res,ios?'image/jpeg':'image/png',ios?0.96:1));
-    const filename=fileBaseName()+(ios?'-LINE高畫質.jpg':'-LINE高清.png');
+    const blob=await new Promise(res=>canvas.toBlob(res,'image/png',1));
+    const filename=fileBaseName()+'-LINE高清.png';
+    const file=new File([blob],filename,{type:'image/png'});
 
-    if(await shareImageFile(blob,filename))return;
+    if(navigator.canShare&&navigator.canShare({files:[file]})){
+      try{
+        await navigator.share({files:[file],title:'RENE CELL 保養配置圖'});
+        return;
+      }catch(shareErr){
+        if(shareErr&&shareErr.name==='AbortError')return;
+      }
+    }
 
     if(ios){
-      await showIOSImagePanel(blob,filename,'share');
-      return;
+      const tab=openPendingTab();
+      if(tab && !tab.closed){
+        const url=URL.createObjectURL(blob);
+        tab.location.href=url;
+        alert('此裝置無法直接開啟分享面板，圖片已在新分頁開啟，請長按圖片選擇「儲存至檔案」。'+LINE_TIP);
+        return;
+      }
     }
 
     triggerDownload(blob,filename);
     alert('此裝置無法直接分享到 LINE，已改為下載高清 PNG。'+LINE_TIP);
   }catch(e){
     console.error(e);
+    if(pendingTab && !pendingTab.closed){ try{pendingTab.close()}catch(_){} }
     alert('圖片產生失敗，請確認網路環境充足後再試一次。若您是從 LINE 內建的瀏覽器開啟這個頁面，請改用 Safari 開啟後再試（右下角「⋯」或分享圖示中選擇「用瀏覽器開啟」）。');
   }finally{
     if(btn){btn.disabled=false;btn.textContent=original}
