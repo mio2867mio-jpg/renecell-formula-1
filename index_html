@@ -527,7 +527,6 @@ async function handleAction(type){
     if(btn){btn.disabled=false;btn.textContent=original}
   }
 }
-
 // 保留舊函式名稱，避免舊按鈕或快取版本失效
 function downloadPNG(){return handleAction('download')}
 function downloadImage(){return downloadPNG()}
