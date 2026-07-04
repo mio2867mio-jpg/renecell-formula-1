@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
@@ -423,24 +422,29 @@ function blobToDataURL(blob){
   });
 }
 
-async function showIOSImagePanel(blob, filename){
+async function showIOSImagePanel(blob, filename, mode='save'){
   const dataURL=await blobToDataURL(blob);
   document.getElementById('iosSavePanel')?.remove();
   const panel=document.createElement('div');
   panel.id='iosSavePanel';
   panel.style.cssText='position:fixed;inset:0;z-index:99999;background:#f7f2ea;overflow:auto;-webkit-overflow-scrolling:touch;padding:18px;font-family:-apple-system,BlinkMacSystemFont,\"PingFang TC\",sans-serif;color:#352822;';
+  const title=mode==='share'?'圖片已產生，可分享至 LINE':'圖片已產生，請儲存';
+  const tip=mode==='share'
+    ? '請按上方「分享至 LINE」。若沒有跳出分享面板，再長按下方圖片選擇「儲存到照片」，回 LINE 傳送圖片。'
+    : '請長按下方圖片，選擇「儲存到照片」。這個畫面已經是產生好的圖片，關閉前請先完成儲存。';
   panel.innerHTML=`<div style="max-width:880px;margin:0 auto 24px;text-align:center;">
     <div style="display:flex;gap:10px;justify-content:flex-end;margin-bottom:12px;position:sticky;top:0;background:#f7f2ea;padding:8px 0;">
-      <button type="button" id="iosShareImage" style="border:0;border-radius:999px;background:#4f3b31;color:white;font-weight:900;padding:11px 18px;">分享 / 存照片</button>
+      <button type="button" id="iosShareImage" style="border:0;border-radius:999px;background:#4f3b31;color:white;font-weight:900;padding:11px 18px;">分享至 LINE</button>
       <button type="button" id="iosCloseImage" style="border:0;border-radius:999px;background:white;color:#4f3b31;font-weight:900;padding:11px 18px;">關閉</button>
     </div>
-    <div style="font-weight:900;font-size:18px;margin:8px 0 6px;">圖片已產生</div>
-    <div style="font-size:14px;line-height:1.7;color:#6d574a;margin-bottom:14px;">請先按上方「分享 / 存照片」。若沒有跳出分享面板，再長按下方圖片選擇「儲存到照片」。LINE 內建瀏覽器若卡住，請改用 Safari 開啟。</div>
+    <div style="font-weight:900;font-size:18px;margin:8px 0 6px;">${title}</div>
+    <div style="font-size:14px;line-height:1.7;color:#6d574a;margin-bottom:14px;">${tip}</div>
     <img src="${dataURL}" alt="${filename}" style="display:block;width:100%;height:auto;border-radius:18px;box-shadow:0 12px 34px rgba(65,45,31,.18);background:white;">
   </div>`;
   document.body.appendChild(panel);
   document.body.style.overflow='hidden';
   document.getElementById('iosCloseImage').onclick=()=>{
+    if(mode==='save') alert('如果還沒儲存，請先長按圖片選擇「儲存到照片」。');
     panel.remove();
     document.body.style.overflow='';
   };
@@ -479,8 +483,7 @@ async function handleAction(type){
       const filename=fileBaseName()+(ios?'-iPhone儲存.jpg':'-高清.png');
 
       if(ios){
-        if(await shareImageFile(blob,filename))return;
-        await showIOSImagePanel(blob,filename);
+        await showIOSImagePanel(blob,filename,'save');
         return;
       }
 
@@ -497,7 +500,7 @@ async function handleAction(type){
     if(await shareImageFile(blob,filename))return;
 
     if(ios){
-      await showIOSImagePanel(blob,filename);
+      await showIOSImagePanel(blob,filename,'share');
       return;
     }
 
