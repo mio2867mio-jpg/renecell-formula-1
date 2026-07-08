@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
 <meta charset="UTF-8" />
@@ -111,10 +111,11 @@ button{cursor:pointer;border:0;outline:none}
 .num{position:absolute;left:12px;top:12px;width:34px;height:34px;border:2px solid #d7b873;color:#a67a2c;background:white;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:17px;box-shadow:0 4px 10px rgba(166,122,44,.12)}
 .card-img{width:142px;height:142px;border-radius:26px;object-fit:cover;background:#eee}
 .card-name{font-weight:900;text-align:center;font-size:18px;line-height:1.2;min-height:38px;display:flex;align-items:center}
-.chip-row{display:flex;align-items:center;justify-content:center;gap:5px;width:100%;min-width:0}
+.chip-row{display:flex;align-items:center;justify-content:center;gap:5px;width:100%;min-width:0;flex-wrap:wrap}
 .chip{border-radius:999px;padding:6px 9px;font-weight:900;font-size:12px;line-height:1.05;text-align:center;max-width:100%;white-space:nowrap}
 .chip.amount{background:#f2e7d1;color:#80653f}
 .chip.method{background:#5a463d;color:white}
+.chip.freq{background:#e5d9c3;color:#6b4f2e}
 .cards.compact{grid-template-columns:repeat(4,1fr);gap:8px 14px;padding:10px}
 .cards.compact .poster-card{min-height:136px;border-radius:15px;padding:6px 7px 5px;gap:2px}
 .cards.compact .poster-card::after{content:none}
@@ -193,28 +194,28 @@ const PASSWORD='K24519811';
 const catOrder=['清潔','化妝水 / 精華','面霜 / 防護','面膜 / 特殊護理'];
 const skinOptions=['敏感','乾燥','出油','粉刺','痘痘','暗沉','斑點','毛孔','術後修護','泛紅'];
 const products=[
-{id:'cleanser',cat:'清潔',name:'酵素潔顏粉',img:'cleanser.png',defaultTimes:['am','pm'],amountType:'適量',amountQty:'',method:'泡沫清潔',foam:'手起泡'},
-{id:'exfoliate',cat:'清潔',name:'去角質面霜',img:'exfoliate.png',defaultTimes:['pm'],amountType:'適量',amountQty:'',method:'塗抹',foam:'手起泡'},
-{id:'toner',cat:'化妝水 / 精華',name:'多肽化妝水',img:'toner.png',defaultTimes:['am','pm'],amountType:'滴',amountQty:'3',method:'塗抹',foam:'手起泡'},
-{id:'hiq_pre',cat:'化妝水 / 精華',name:'Hi-Q前導精華',img:'hiq_pre.png',defaultTimes:['am','pm'],amountType:'cm',amountQty:'1',method:'塗抹',foam:'手起泡'},
-{id:'ha',cat:'化妝水 / 精華',name:'玻尿酸補水精華',img:'ha.png',defaultTimes:['am','pm'],amountType:'滴',amountQty:'3',method:'塗抹',foam:'手起泡'},
-{id:'regen',cat:'化妝水 / 精華',name:'再生修復精華',img:'regen.png',defaultTimes:['am','pm'],amountType:'cm',amountQty:'1',method:'塗抹',foam:'手起泡'},
-{id:'vitc',cat:'化妝水 / 精華',name:'維生素C精華',img:'vitc.png',defaultTimes:['am'],amountType:'滴',amountQty:'3',method:'塗抹',foam:'手起泡'},
-{id:'ampoule',cat:'化妝水 / 精華',name:'緊緻安瓶',img:'ampoule.png',defaultTimes:['pm'],amountType:'滴',amountQty:'3',method:'塗抹',foam:'手起泡'},
-{id:'peptide_cream',cat:'面霜 / 防護',name:'多肽霜',img:'peptide_cream.png',defaultTimes:['pm'],amountType:'cm',amountQty:'1',method:'塗抹',foam:'手起泡'},
-{id:'hiq_cream',cat:'面霜 / 防護',name:'Hi-Q奢華面霜',img:'hiq_cream.png',defaultTimes:['am','pm'],amountType:'cm',amountQty:'1',method:'塗抹',foam:'手起泡'},
-{id:'repair_cream',cat:'面霜 / 防護',name:'保濕修護霜',img:'repair_cream.png',defaultTimes:['am','pm'],amountType:'cm',amountQty:'1',method:'塗抹',foam:'手起泡'},
-{id:'diamond_cb',cat:'面霜 / 防護',name:'鑽石CB修護霜',img:'diamond_cb.png',defaultTimes:['am','pm'],amountType:'cm',amountQty:'1',method:'塗抹',foam:'手起泡'},
-{id:'bb',cat:'面霜 / 防護',name:'BB隔離霜',img:'bb.png',defaultTimes:['am'],amountType:'cm',amountQty:'1',method:'塗抹',foam:'手起泡'},
-{id:'sunscreen',cat:'面霜 / 防護',name:'SPF 50防曬霜',img:'sunscreen.png',defaultTimes:['am'],amountType:'cm',amountQty:'2',method:'塗抹',foam:'手起泡'},
-{id:'spot_cream',cat:'面霜 / 防護',name:'美白淡斑霜',img:'spot_cream.png',defaultTimes:['pm'],amountType:'cm',amountQty:'1',method:'塗抹',foam:'手起泡'},
-{id:'antisens',cat:'面霜 / 防護',name:'抗敏乳',img:'antisens.png',defaultTimes:['am','pm'],amountType:'適量',amountQty:'',method:'塗抹',foam:'手起泡'},
-{id:'mask_119',cat:'面膜 / 特殊護理',name:'119面膜',img:'mask_119.png',defaultTimes:['pm'],amountType:'適量',amountQty:'',method:'厚敷',foam:'手起泡'},
-{id:'mask_nutrition',cat:'面膜 / 特殊護理',name:'營養保濕面膜',img:'mask_nutrition.png',defaultTimes:['pm'],amountType:'適量',amountQty:'',method:'厚敷',foam:'手起泡'},
-{id:'coconut_mask',cat:'面膜 / 特殊護理',name:'椰子面膜',img:'coconut_mask.png',defaultTimes:['pm'],amountType:'適量',amountQty:'',method:'厚敷',foam:'手起泡'},
-{id:'bluelight_spray',cat:'面膜 / 特殊護理',name:'抗藍光防護噴霧',img:'bluelight_spray.png',defaultTimes:['am'],amountType:'適量',amountQty:'',method:'噴霧',foam:'手起泡'},
-{id:'cpr_set',cat:'面膜 / 特殊護理',name:'CPR三階段保養套組',img:'cpr_set.png',defaultTimes:['pm'],amountType:'適量',amountQty:'',method:'塗抹',foam:'手起泡'},
-{id:'whitening_2wk',cat:'面膜 / 特殊護理',name:'2週集中淡斑管理',img:'whitening_2wk.png',defaultTimes:['pm'],amountType:'適量',amountQty:'',method:'塗抹',foam:'手起泡'}
+{id:'cleanser',cat:'清潔',name:'酵素潔顏粉',img:'cleanser.png',defaultTimes:['am','pm'],amountType:'適量',amountQty:'',method:'泡沫清潔',foam:'手起泡',freq:'每日'},
+{id:'exfoliate',cat:'清潔',name:'去角質面霜',img:'exfoliate.png',defaultTimes:['pm'],amountType:'適量',amountQty:'',method:'塗抹',foam:'手起泡',freq:'每週2次'},
+{id:'toner',cat:'化妝水 / 精華',name:'多肽化妝水',img:'toner.png',defaultTimes:['am','pm'],amountType:'滴',amountQty:'3',method:'塗抹',foam:'手起泡',freq:'每日'},
+{id:'hiq_pre',cat:'化妝水 / 精華',name:'Hi-Q前導精華',img:'hiq_pre.png',defaultTimes:['am','pm'],amountType:'cm',amountQty:'1',method:'塗抹',foam:'手起泡',freq:'每日'},
+{id:'ha',cat:'化妝水 / 精華',name:'玻尿酸補水精華',img:'ha.png',defaultTimes:['am','pm'],amountType:'滴',amountQty:'3',method:'塗抹',foam:'手起泡',freq:'每日'},
+{id:'regen',cat:'化妝水 / 精華',name:'再生修復精華',img:'regen.png',defaultTimes:['am','pm'],amountType:'cm',amountQty:'1',method:'塗抹',foam:'手起泡',freq:'每日'},
+{id:'vitc',cat:'化妝水 / 精華',name:'維生素C精華',img:'vitc.png',defaultTimes:['am'],amountType:'滴',amountQty:'3',method:'塗抹',foam:'手起泡',freq:'每日'},
+{id:'ampoule',cat:'化妝水 / 精華',name:'緊緻安瓶',img:'ampoule.png',defaultTimes:['pm'],amountType:'滴',amountQty:'3',method:'塗抹',foam:'手起泡',freq:'每日'},
+{id:'peptide_cream',cat:'面霜 / 防護',name:'多肽霜',img:'peptide_cream.png',defaultTimes:['pm'],amountType:'cm',amountQty:'1',method:'塗抹',foam:'手起泡',freq:'每日'},
+{id:'hiq_cream',cat:'面霜 / 防護',name:'Hi-Q奢華面霜',img:'hiq_cream.png',defaultTimes:['am','pm'],amountType:'cm',amountQty:'1',method:'塗抹',foam:'手起泡',freq:'每日'},
+{id:'repair_cream',cat:'面霜 / 防護',name:'保濕修護霜',img:'repair_cream.png',defaultTimes:['am','pm'],amountType:'cm',amountQty:'1',method:'塗抹',foam:'手起泡',freq:'每日'},
+{id:'diamond_cb',cat:'面霜 / 防護',name:'鑽石CB修護霜',img:'diamond_cb.png',defaultTimes:['am','pm'],amountType:'cm',amountQty:'1',method:'塗抹',foam:'手起泡',freq:'每日'},
+{id:'bb',cat:'面霜 / 防護',name:'BB隔離霜',img:'bb.png',defaultTimes:['am'],amountType:'cm',amountQty:'1',method:'塗抹',foam:'手起泡',freq:'每日'},
+{id:'sunscreen',cat:'面霜 / 防護',name:'SPF 50防曬霜',img:'sunscreen.png',defaultTimes:['am'],amountType:'cm',amountQty:'2',method:'塗抹',foam:'手起泡',freq:'每日'},
+{id:'spot_cream',cat:'面霜 / 防護',name:'美白淡斑霜',img:'spot_cream.png',defaultTimes:['pm'],amountType:'cm',amountQty:'1',method:'塗抹',foam:'手起泡',freq:'每日'},
+{id:'antisens',cat:'面霜 / 防護',name:'抗敏乳',img:'antisens.png',defaultTimes:['am','pm'],amountType:'適量',amountQty:'',method:'塗抹',foam:'手起泡',freq:'每日'},
+{id:'mask_119',cat:'面膜 / 特殊護理',name:'119面膜',img:'mask_119.png',defaultTimes:['pm'],amountType:'適量',amountQty:'',method:'厚敷',foam:'手起泡',freq:'每日'},
+{id:'mask_nutrition',cat:'面膜 / 特殊護理',name:'營養保濕面膜',img:'mask_nutrition.png',defaultTimes:['pm'],amountType:'適量',amountQty:'',method:'厚敷',foam:'手起泡',freq:'每日'},
+{id:'coconut_mask',cat:'面膜 / 特殊護理',name:'椰子面膜',img:'coconut_mask.png',defaultTimes:['pm'],amountType:'適量',amountQty:'',method:'厚敷',foam:'手起泡',freq:'每日'},
+{id:'bluelight_spray',cat:'面膜 / 特殊護理',name:'抗藍光防護噴霧',img:'bluelight_spray.png',defaultTimes:['am'],amountType:'適量',amountQty:'',method:'噴霧',foam:'手起泡',freq:'每日'},
+{id:'cpr_set',cat:'面膜 / 特殊護理',name:'CPR三階段保養套組',img:'cpr_set.png',defaultTimes:['pm'],amountType:'適量',amountQty:'',method:'塗抹',foam:'手起泡',freq:'每日'},
+{id:'whitening_2wk',cat:'面膜 / 特殊護理',name:'2週集中淡斑管理',img:'whitening_2wk.png',defaultTimes:['pm'],amountType:'適量',amountQty:'',method:'塗抹',foam:'手起泡',freq:'每日'}
 ];
 const state={cfg:{}, order:{am:[],pm:[]}};
 products.forEach(p=>state.cfg[p.id]={...p,selected:false,am:false,pm:false});
@@ -228,8 +229,9 @@ function init(){const d=new Date();document.getElementById('date').value=d.toISO
 if(localStorage.getItem('renecell_login')==='yes'){document.getElementById('login').style.display='none';document.getElementById('app').style.display='block';init();}
 function renderSkinTags(){document.getElementById('skinTags').innerHTML=skinOptions.map(t=>`<label class="tag"><input type="checkbox" value="${escapeHTML(t)}" onchange="renderPoster()"><span>${escapeHTML(t)}</span></label>`).join('')}
 
+const freqOptions=['每日','隔天1次','每週3次','每週2次','每週1次','每2週1次'];
 function productConfigHTML(id,p){
-  const qtyDisplay=(p.amountType==='滴'||p.amountType==='cm')?'':'display:none';
+  const qtyDisplay=(p.amountType==='滴'||p.amountType==='cm'||p.amountType==='下')?'':'display:none';
   const noTime=!p.am&&!p.pm;
   return `<div class="inline-config">
     <div class="inline-head">
@@ -252,12 +254,13 @@ function productConfigHTML(id,p){
           <option ${p.amountType==='少量'?'selected':''}>少量</option>
           <option ${p.amountType==='滴'?'selected':''}>滴</option>
           <option ${p.amountType==='cm'?'selected':''}>cm</option>
+          <option ${p.amountType==='下'?'selected':''}>下</option>
         </select>
       </label>
       <label style="${qtyDisplay}">
         <div class="cfg-label">數量</div>
         <select onchange="setCfg('${id}','amountQty',this.value)">
-          ${(p.amountType==='cm'?['1','2']:['1','2','3','4','5']).map(n=>`<option ${String(p.amountQty||1)===n?'selected':''}>${n}</option>`).join('')}
+          ${['1','2','3','4','5'].map(n=>`<option ${String(p.amountQty||1)===n?'selected':''}>${n}</option>`).join('')}
         </select>
       </label>
       <label>
@@ -274,6 +277,12 @@ function productConfigHTML(id,p){
         <select onchange="setCfg('${id}','foam',this.value)">
           <option ${p.foam==='手起泡'?'selected':''}>手起泡</option>
           <option ${p.foam==='打泡器'?'selected':''}>打泡器</option>
+        </select>
+      </label>
+      <label>
+        <div class="cfg-label">頻率</div>
+        <select onchange="setCfg('${id}','freq',this.value)">
+          ${freqOptions.map(f=>`<option ${(p.freq||'每日')===f?'selected':''}>${f}</option>`).join('')}
         </select>
       </label>
     </div>
@@ -304,16 +313,16 @@ function toggleProduct(id) {
 
 function renderAll(){renderProducts();renderOrders();renderPoster()}
 function setTime(id,kind,val){const p=state.cfg[id];p[kind]=val;if(val&&!state.order[kind].includes(id))state.order[kind].push(id);if(!val)state.order[kind]=state.order[kind].filter(x=>x!==id);renderAll();}
-function setCfg(id,key,val){const p=state.cfg[id];p[key]=val;if(key==='amountType'){if(val==='cm'&&!['1','2'].includes(String(p.amountQty)))p.amountQty='1';if(val==='滴'&&!['1','2','3','4','5'].includes(String(p.amountQty)))p.amountQty='1';if(val==='適量'||val==='少量')p.amountQty=''}renderProducts();renderPoster()}
+function setCfg(id,key,val){const p=state.cfg[id];p[key]=val;if(key==='amountType'){if((val==='cm'||val==='滴'||val==='下')&&!['1','2','3','4','5'].includes(String(p.amountQty)))p.amountQty='1';if(val==='適量'||val==='少量')p.amountQty=''}renderProducts();renderPoster()}
 function validOrder(kind){return state.order[kind].filter(id=>state.cfg[id]?.selected && state.cfg[id]?.[kind])}
 function renderOrders(){renderOrder('am');renderOrder('pm')}
 function renderOrder(kind){const ids=validOrder(kind);const box=document.getElementById(kind==='am'?'amOrderBox':'pmOrderBox');if(!ids.length){box.innerHTML='<div class="empty" style="padding:10px;color:var(--muted);font-size:14px;width:100%">尚未加入商品</div>';return}box.innerHTML=ids.map((id,i)=>{const p=state.cfg[id];return `<div class="order-row"><div class="order-num">${i+1}</div>${imgTag(p,'order-img')}<div class="order-name">${escapeHTML(p.name)}</div><div class="move-btns"><button onclick="move('${kind}','${id}',-1)">←</button><button onclick="move('${kind}','${id}',1)">→</button></div></div>`}).join('')}
 function move(kind,id,dir){const arr=validOrder(kind);const i=arr.indexOf(id);const j=i+dir;if(j<0||j>=arr.length)return;[arr[i],arr[j]]=[arr[j],arr[i]];state.order[kind]=arr;renderOrders();renderPoster()}
 function getSkinText(){const vals=[...document.querySelectorAll('#skinTags input:checked')].map(x=>x.value);return vals.length?vals.join('、'):''}
-function amount(p){if(p.amountType==='滴'||p.amountType==='cm')return `${p.amountQty||1} ${p.amountType}`;return p.amountType||'適量'}
+function amount(p){if(p.amountType==='滴'||p.amountType==='cm'||p.amountType==='下')return `${p.amountQty||1} ${p.amountType}`;return p.amountType||'適量'}
 function method(p){return p.method==='泡沫清潔'?`泡沫清潔 (${p.foam||'手起泡'})`:p.method}
 function notePills(){const raw=document.getElementById('notes').value.trim();if(!raw)return '';return raw.split(/[、，,\n]/).map(s=>s.trim()).filter(Boolean).slice(0,6).map(s=>`<span class="note-pill">${escapeHTML(s)}</span>`).join('')}
-function cards(kind){const ids=validOrder(kind);const compact=ids.length>8?' compact':'';if(!ids.length)return `<div class="empty" style="grid-column:1/-1;text-align:center;padding:50px;color:var(--muted);font-weight:700;">此時段暫無配置商品</div>`;return `<div class="cards${compact}">`+ids.map((id,i)=>{const p=state.cfg[id];return `<div class="poster-card"><div class="num">${i+1}</div>${imgTag(p,'card-img')}<div class="card-name">${escapeHTML(p.name)}</div><div class="chip-row"><div class="chip amount">用量 ${escapeHTML(amount(p))}</div><div class="chip method">用法 ${escapeHTML(method(p))}</div></div></div>`}).join('')+'</div>'}
+function cards(kind){const ids=validOrder(kind);const compact=ids.length>8?' compact':'';if(!ids.length)return `<div class="empty" style="grid-column:1/-1;text-align:center;padding:50px;color:var(--muted);font-weight:700;">此時段暫無配置商品</div>`;return `<div class="cards${compact}">`+ids.map((id,i)=>{const p=state.cfg[id];const freqChip=(p.freq&&p.freq!=='每日')?`<div class="chip freq">頻率 ${escapeHTML(p.freq)}</div>`:'';return `<div class="poster-card"><div class="num">${i+1}</div>${imgTag(p,'card-img')}<div class="card-name">${escapeHTML(p.name)}</div><div class="chip-row"><div class="chip amount">用量 ${escapeHTML(amount(p))}</div><div class="chip method">用法 ${escapeHTML(method(p))}</div>${freqChip}</div></div>`}).join('')+'</div>'}
 function renderPoster(){const customer=document.getElementById('customer')?.value.trim()||'';const skin=getSkinText();const date=document.getElementById('date')?.value||'';const provider=document.getElementById('provider')?.value.trim()||'';document.getElementById('poster').innerHTML=`<div class="poster-bg"></div><header class="poster-top"><div class="poster-head"><div class="poster-title">RENE CELL 專屬保養配置</div></div><div class="poster-meta"><div class="info-card"><div class="info-grid"><div class="info-row"><b>客戶</b><span>${escapeHTML(customer)}</span></div><div class="info-row"><b>日期</b><span>${escapeHTML(date)}</span></div><div class="info-row"><b>配置者</b><span>${escapeHTML(provider)}</span></div><div class="info-row wide"><b>膚況重點</b><span>${escapeHTML(skin)}</span></div></div></div><div class="meta-bottom"><div class="side-note"><div class="note-title">注意事項</div><div class="note-tags">${notePills()}</div></div></div></div></header><main class="poster-main"><section class="section am"><div class="section-head"><span>☀ 白天 AM 使用順序</span><span class="hint">由左至右依序使用</span></div>${cards('am')}</section><section class="section pm"><div class="section-head"><span>☾ 晚上 PM 使用順序</span><span class="hint">由左至右依序使用</span></div>${cards('pm')}</section></main>`}
 
 function validateBeforeOutput(){
@@ -599,9 +608,3 @@ function shareLine(){return handleAction('share')}
 
 </body>
 </html>
-
-
-
-
-
-
